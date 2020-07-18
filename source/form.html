@@ -32,7 +32,103 @@
                 <h1 class="page-header__photo intro-slogan">Конкурс на самое безбашенное путешествие с Пинк</h1>
             </div>
         </header>
-        <main></main>
+        <main class="page-main">
+          <section class="contest-feedback">
+            <div class="contest-feedback__slogan">
+              <p class="contest-feedback__slogan--text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+            </div>
+            <form class="contest-feedback__form" action="https://echo.htmlacademy.ru" method="post">
+              <fieldset class="contest-feedback__field">
+                <ul class="contest-feedback__list">
+                  <li class="contest-feedback__list--item">
+                    <label class="label label--caption" for="surname">фамилия:</label>
+                    <input class="text" type="text" name="surname" id="surname" placeholder="Укажите фамилию" required>
+                  </li>
+                  <li class="contest-feedback__list--item">
+                    <label class="label label--caption" for="name">имя:</label>
+                    <input class="text" type="text" name="name" id="name" placeholder="Введите ваше имя" required>
+                  </li>
+                  <li class="contest-feedback__list--item">
+                    <label class="label label--caption" for="middle-name">отчество:</label>
+                    <input class="text" type="text" name="middle-name" id="middle-name" placeholder="Ну и отчество тоже" required>
+                  </li>
+                </ul>
+              </fieldset>
+              <div class="contest-feedback__wrapper">
+                <fieldset class="contest-feedback__field">
+                  <legend class="contest-feedback__title">ваши безбашенные достижения в путешествии</legend>
+                  <ul class="contest-feedback__list">
+                    <li class="contest-feedback__list--item">
+                      <input class="checkbox" type="checkbox" name="selfi" id="selfi" checked="">
+                      <label class="label label--checkbox" for="selfi"><span>Сделал селфи с акулой</span></label>
+                    </li>
+                    <li class="contest-feedback__list--item">
+                      <input class="checkbox" type="checkbox" name="beach" id="beach" checked="">
+                      <label class="label label--checkbox" for="beach"><span>Обгорел на пляже</span></label>
+                    </li>
+                    <li class="contest-feedback__list--item">
+                      <input class="checkbox" type="checkbox" name="norris" id="norris">
+                      <label class="label label--checkbox" for="norris"><span>Видел Чака Норриса</span></label>
+                    </li>
+                    <li class="contest-feedback__list--item">
+                      <input class="checkbox" type="checkbox" name="presents" id="presents">
+                      <label class="label label--checkbox" for="presents"><span>Накупил сувениров</span></label>
+                    </li>
+                    <li class="contest-feedback__list--item">
+                      <input class="checkbox" type="checkbox" name="tower" id="tower" checked="">
+                      <label class="label label--checkbox" for="tower"><span>Удержал башню</span></label>
+                    </li>
+                    <li class="contest-feedback__list--item">
+                      <input class="checkbox" type="checkbox" name="destroy" id="destroy">
+                      <label class="label label--checkbox" for="destroy"><span>Разгромил отель</span></label>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
+              <fieldset class="contest-feedback contest-feedback__contacts">
+                <ul class="contest-feedback__list">
+                  <li class="contest-feedback__list--item">
+                    <label class="label label--caption" for="tel">номер телефона</label>
+                    <input class="tel" type="tel" name="phone-number" placeholder="Номер,пожалуйста">
+                  </li>
+                  <li class="contest-feedback__list--item">
+                    <label class="label label--caption" for="email">адрес почты</label>
+                    <input class="email" type="email" name="email" placeholder="Введите почту*" required>
+                  </li>
+                </ul>
+              </fieldset>
+              <div class="contest-feedback__wrapper">
+                <fieldset class="contest-feedback__field">
+                  <legend class="contest-feedback__title">с каким приложением путешествовали?</legend>
+                  <ul class="contest-feedback__list">
+                    <li class="contest-feedback__list--item">
+                      <input class="radio" type="radio" name="trip-app" id="ios" value="ios" checked>
+                      <label class="label label--radio" for="ios">Pink для iOS</label>
+                    </li>
+                    <li class="contest-feedback__list--item">
+                      <input class="radio" type="radio" name="trip-app" id="android" value="android">
+                      <label class="label label--radio" for="android">Pink на Android</label>
+                    </li>
+                    <li class="contest-feedback__list--item">
+                      <input class="radio" type="radio" name="trip-app" id="win-phone" value="android">
+                      <label class="label label--radio" for="win-phone">Windows Phone</label>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
+              <fieldset class="contest-feedback__field--emotions">
+                <legend class="contest-feedback__title">опишите свои эмоции</legend>
+                <textarea class="textarea-text" name="feedback-emotion" id="feedback-emotion" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              </fieldset>
+              <div class="contest-feedback__wrapper">
+                <button class="submit" type="submit">отправить форму</button>
+              </div>
+              <div class="contest-feedback__wrapper">
+                <p class="contest-feedback__title--black">*-обязательные поля</p>
+              </div>
+            </form>
+          </section>
+        </main>
     </body>
     <footer class="page-footer">
         <div class="page-footer__wrapper">
