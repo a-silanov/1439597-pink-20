@@ -1,0 +1,101 @@
+.page-header {
+  background-color: #283645;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom 223px;
+  background-size: 700px auto;
+  min-width: 320px;
+  position: absolute;
+  top: 0;
+}
+
+.burger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 28px;
+  height: 24px;
+  margin-right: 20px;
+}
+
+.page-header__photo {
+  text-align: center;
+}
+
+.intro-slogan {
+  color: white;
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: normal;
+}
+
+.promo__title {
+  margin: 0;
+  padding: 32px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+
+  &--heading {
+    color: white;
+  }
+}
+
+.site-list {
+  list-style: none;
+  width: 320px;
+}
+
+.site-list__item {
+  text-align: center;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  margin-bottom: 1px;
+  background: #283645;
+  box-shadow: 1px rgba(255, 255, 255, 0.15);
+}
+
+.site-list__link {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: bold;
+}
+
+.app-download {
+  width: 320px;
+  margin-bottom: 34px;
+}
+
+.app-download__btn {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  padding-left: 38px;
+  padding-right: 39px;
+  border: 2px solid white;
+  border-radius: 9px;
+  margin-left: 50px;
+}
+
+.link-store {
+  display: flex;
+  flex-grow: 1;
+}
+
+.link-store__description {
+  text-align: center;
+
+  &--text {
+    color: white;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+  }
+}

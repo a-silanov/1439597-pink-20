@@ -1,0 +1,35 @@
+.price__list {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 54px auto 39px;
+  table-layout: fixed;
+  line-height: 30px;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.price__value {
+  &--hit {
+    width: 233px;
+    padding: 16px 22px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #283645;
+    border: solid 2px #e5e5e5;
+    border-top: none;
+    border-bottom: none;
+  }
+}
+
+.price__field {
+  left: 278px;
+  width: 160px;
+  padding: 15px 22px 14px;
+  text-transform: uppercase;
+  text-align: left;
+  background-color: #ffffff;
+  border: solid 2px #e5e5e5;
+  border-top-width: 0;
+  transform: translateY(1px);
+}

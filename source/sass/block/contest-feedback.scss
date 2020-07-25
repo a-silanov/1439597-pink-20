@@ -1,0 +1,78 @@
+.contest-feedback__slogan--text {
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+.contest-feedback__list {
+  list-style: none;
+}
+
+.label__name {
+  font-size: 14px;
+  line-height: 30px;
+  font-style: normal;
+  margin-left: 13px;
+  text-transform: uppercase;
+  color: #d22856;
+}
+
+.label__input {
+  border: 1px solid #e5e5e5;
+  border-radius: 1px;
+  margin-left: -22px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 42px;
+  padding-right: 105px;
+  color: #283645;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+.contest-feedback__wrapper {
+  background-color: #f2f2f2;
+  width: 320px;
+}
+
+.contest-feedback__title {
+  font-size: 14px;
+  line-height: 30px;
+  color: #d22856;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 42px;
+}
+
+.contest-feedback__field {
+  border: none;
+
+  &--emotions {
+    border: none;
+  }
+}
+
+.textarea-text {
+  width: 276px;
+  height: 197px;
+  left: 22px;
+  border: 2px solid #e5e5e5;
+  border-radius: 1px;
+}
+
+.submit {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #2aab6d;
+  border: 2px solid #2aab6d;
+  border-radius: 1px;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  padding-right: 45px;
+  padding-left: 67px;
+}

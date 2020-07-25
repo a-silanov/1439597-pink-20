@@ -1,0 +1,23 @@
+.feature {
+  margin-bottom: 43px;
+  width: 320px;
+
+  &--title {
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+
+  &--text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+  }
+
+  &--img {
+    padding-left: 82px;
+    width: 157px;
+  }
+}

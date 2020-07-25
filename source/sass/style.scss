@@ -1,1 +1,23 @@
 // Начните писать стили здесь
+@import "block/page-header.scss";
+@import "block/about.scss";
+@import "block/contact.scss";
+@import "block/page-footer.scss";
+@import "block/page-main.scss";
+@import "block/price.scss";
+@import "block/reviews.scss";
+@import "block/main-nav.scss";
+@import "global/fonts.scss";
+@import "block/about_slogan.scss";
+@import "block/about__features.scss";
+@import "block/feature.scss";
+@import "global/variables.scss";
+@import "block/photo-section.scss";
+@import "block/photo-users.scss";
+@import "block/photo-load.scss";
+
+body {
+  width: 320px;
+}
+
+@import "block/contest-feedback.scss";
