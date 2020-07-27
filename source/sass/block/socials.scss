@@ -1,0 +1,15 @@
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+  list-style: none;
+}
+
+.socials__item {
+  margin: 0 6px;
+}
+
+.socials__link {
+  fill: #d22856;
+}

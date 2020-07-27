@@ -2,21 +2,21 @@
   margin-bottom: 43px;
   width: 320px;
 
-  &--title {
+  .feature__title {
     text-align: center;
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 10px;
   }
 
-  &--text {
+  .feature__text {
     text-align: center;
     font-size: 14px;
     line-height: 24px;
     font-weight: normal;
   }
 
-  &--img {
+  .feature__img {
     padding-left: 82px;
     width: 157px;
   }

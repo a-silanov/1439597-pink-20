@@ -1,7 +1,9 @@
+.price {
+  width: 320px;
+}
+
 .price__list {
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
   margin: 54px auto 39px;
   table-layout: fixed;
   line-height: 30px;

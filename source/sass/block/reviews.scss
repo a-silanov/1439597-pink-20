@@ -1,17 +1,17 @@
 .reviews__item {
   background-color: white;
   width: 320px;
+}
 
-  &--title {
-    font-size: 18px;
-    line-height: 30px;
-    text-align: center;
-  }
+.reviews__author {
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+}
 
-  &--content {
-    font-size: 14px;
-    line-height: 30px;
-    font-weight: normal;
-    text-align: center;
-  }
+.reviews__content {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+  text-align: center;
 }
