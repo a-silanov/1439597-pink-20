@@ -1,0 +1,15 @@
+.link-store {
+  display: flex;
+  flex-grow: 1;
+}
+
+.link-store__description {
+  text-align: center;
+
+  &--text {
+    color: white;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+  }
+}
