@@ -1,0 +1,32 @@
+.contest-feedback__slogan--text {
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+.contest-feedback__list {
+  list-style: none;
+}
+
+.contest-feedback__wrapper {
+  background-color: #f2f2f2;
+  width: 320px;
+}
+
+.contest-feedback__title {
+  font-size: 14px;
+  line-height: 30px;
+  color: #d22856;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 42px;
+}
+
+.contest-feedback__field {
+  border: none;
+
+  &--emotions {
+    border: none;
+  }
+}

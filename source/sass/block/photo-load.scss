@@ -1,0 +1,35 @@
+.photo-load__wrapper {
+  width: 280px;
+  margin-left: 20px;
+}
+
+.photo-load__content-wrapper {
+  background-color: white;
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  margin-top: 49px;
+}
+
+.photo-load__form {
+  background-color: #f2f2f2;
+  width: 320px;
+}
+
+.photo-load__form-wrapper {
+  padding: 20px;
+}
+
+.photo-load__buttons {
+  text-align: center;
+  font-size: 18px;
+  line-height: 18px;
+  border-radius: 9px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+
+  &--submit {
+    color: #d22856;
+    border: 2px solid #d22856;
+  }
+}

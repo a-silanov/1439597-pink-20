@@ -2,12 +2,13 @@
 <html class="page" lang="ru">
     <head>
         <meta charset="UTF-8">
+        <link href="css/style.css" rel="stylesheet">
         <title>Проект Пинк</title>
     </head>
-    <body>
+    <body class="page">
         <header class="page-header">
             <a href="#" class="page-header__logo">
-             <img class="page-header__logo-image" src="#" alt="логотип">
+              <img class="page-header__logo-image" src="#" alt="логотип">
             </a>
             <nav class="main-nav">
               <button class="burger" type="button">
@@ -38,7 +39,7 @@
           <section class="photo-section">
               <div class="photo-section__main-wrapper">
                   <div class="photo-section__slogan-wrapper">
-                      <p class="photo-section__slogan">Взгляните на фотографии, которые выкладывают пользователи!Видите, как не хватает ваших?</p>
+                      <p class="photo-section__slogan">Взгляните на фотографии, которые<br> выкладывают пользователи!<br>Видите, как не хватает ваших?</p>
                   </div>
               </div>
               <section class="photo-users">
@@ -46,14 +47,18 @@
                       <div class="photo-users__view photo-users__view--description">
                           <p class="photo-users photo-users--text">панорама дня<p>
                       </div>
-                      <img class="photo-users__full-size" src="#" alt="панорама"><img>
+                      <img class="photo-users__full-size" src="img/panorama-mobile@1x.jpg" alt="панорама"><img>
                       <div class="photo-users__comment-wrapper">
-                          <h4 class="photo-users__autor">Анна<span>(5 минут назад)</span></h4>
-                          <p class="photo-users__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!
+                          <h4 class="photo-users__autor">Анна<span class="photo-users__autor photo-users__autor--time">(5 минут назад)</span></h4>
+                          <p class="photo-users__comment">Прыгать или нет? Напишите в<br> коментарии свой совет и<br> смотрите прямую транслацию в<br> перископе, задавайте свои вопросы!
                           </p>
                           <div class="photo-users__likes">
                               <p class="photo-users__likes photo-users__likes--text">нравится</p>
-                              <img class="photo-users__likes-image" src="#" alt="количество лайков">
+                              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+                                <g>
+                                  <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
+                                </g>
+                              </svg>
                           </div>
                       </div>
                   </div>
@@ -61,85 +66,109 @@
                       <section class="photo-users__item">
                         <div class="photo-users__container">
                           <div class=" photo-users__container photo-users__picture">
-                            <img src="#" alt="Камера">
+                            <img src="img/photo-car-mobile@1x.jpg" alt="Камера">
                           </div>
                           <div class="photo-users__container photo-users__descrition">
                               <h4 class="photo-users__autor">Левон<span>(5 часов назад)</span></h4>
                               <p class="photo-users__comment">Вчера он на Луну летал,сегодня в оуки к нам попал!
                               </p>
                               <div class="photo-users__likes">
-                                  <p class="photo-users__likes photo-users__likes--text">нравится</p>
-                                  <img class="photo-users__likes-image" src="#" alt="количество лайков">
+                                  <p class="photo-users__likes photo-users__likes--text">нравится: 356</p>
+                                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+                                    <g>
+                                      <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
+                                    </g>
+                                  </svg>
                               </div>
                           </div>
                         </div>
                       </section>
                       <section class="photo-users__item">
                         <div class="photo-users__container">
-                          <div class="photo-users__container photo-users__picture"><img src="#" alt="Ударная установка"></div>
+                          <div class="photo-users__container photo-users__picture"><img src="img/photo-drumset-mobile@1x.jpg" alt="Ударная установка"></div>
                           <div class="photo-users__container photo-users__descrition">
                               <h4 class="photo-users__autor">Антон<span>(12 часов назад)</span></h4>
                               <p class="photo-users__comment">Соседи будут рады!
                               </p>
                               <div class="photo-users__likes">
-                                  <p class="photo-users__likes photo-users__likes--text">нравится</p>
-                                  <img class="photo-users__likes-image" src="#" alt="количество лайков">
+                                  <p class="photo-users__likes photo-users__likes--text">нравится: 666</p>
+                                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+                                    <g>
+                                      <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
+                                    </g>
+                                  </svg>
                               </div>
                           </div>
                         </div>
                       </section>
                       <section class="photo-users__item">
                         <div class="photo-users__container">
-                          <div class="photo-users__container photo-users__picture"><img src="#" alt="Небо"></div>
+                          <div class="photo-users__container photo-users__picture"><img src="img/photo-window-mobile@1x.jpg" alt="Небо"></div>
                           <div class="photo-users__container photo-users__descrition">
                               <h4 class="photo-users__autor">Борис<span>(20 часов назад)</span></h4>
                               <p class="photo-users__comment">Здесь могла быть ваша цитата о высоком и вечном
                               </p>
                               <div class="photo-users__likes">
-                                  <p class="photo-users__likes photo-users__likes--text">нравится</p>
-                                  <img class="photo-users__likes-image" src="#" alt="количество лайков">
+                                  <p class="photo-users__likes photo-users__likes--text">нравится: 215</p>
+                                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+                                    <g>
+                                      <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
+                                    </g>
+                                  </svg>
                               </div>
                           </div>
                         </div>
                       </section>
                       <section class="photo-users__item">
                         <div class="photo-users__container">
-                          <div class="photo-users__container photo-users__picture"><img src="#" alt="Арбузы"></div>
+                          <div class="photo-users__container photo-users__picture"><img src="img/photo-fair-mobile@1x.jpg" alt="Арбузы"></div>
                           <div class="photo-users__container photo-users__descrition">
                               <h4 class="photo-users__autor">Сергей<span>(25 часов назад)</span></h4>
                               <p class="photo-users__comment">Самая кубанская в мире!
                               </p>
                               <div class="photo-users__likes">
-                                  <p class="photo-users__likes photo-users__likes--text">нравится</p>
-                                  <img class="photo-users__likes-image" src="#" alt="количество лайков">
+                                  <p class="photo-users__likes photo-users__likes--text">нравится: 4</p>
+                                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+                                    <g>
+                                      <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
+                                    </g>
+                                  </svg>
                               </div>
                           </div>
                         </div>
                       </section>
                       <section class="photo-users__item">
                         <div class="photo-users__container">
-                          <div class="photo-users__container photo-users__picture"><img src="#" alt="Лес"></div>
+                          <div class="photo-users__container photo-users__picture"><img src="img/photo-pov-mobile@1x.jpg" alt="Лес"></div>
                           <div class="photo-users__container photo-users__descrition">
                               <h4 class="photo-users__autor">Максим<span>(40 часов назад)</span></h4>
                               <p class="photo-users__comment">Где снего-то?
                               </p>
                               <div class="photo-users__likes">
-                                  <p class="photo-users__likes photo-users__likes--text">нравится</p>
-                                  <img class="photo-users__likes-image" src="#" alt="количество лайков">
+                                  <p class="photo-users__likes photo-users__likes--text">нравится: 150</p>
+                                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+                                    <g>
+                                      <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
+                                    </g>
+                                  </svg>
                               </div>
                           </div>
                         </div>
                       </section>
                       <section class="photo-users__item">
                         <div class="photo-users__container">
-                          <div class="photo-users__container photo-users__picture"><img src="#" alt="Вид из самолета"></div>
+                          <div class="photo-users__container photo-users__picture"><img src="img/photo-wing-mobile@1x.jpg" alt="Вид из самолета"></div>
                           <div class="photo-users__container photo-users__descrition">
                               <h4 class="photo-users__autor">Надежда<span>(45 часов назад)</span></h4>
                               <p class="photo-users__comment">Всем GM и взаимные лайки
                               </p>
                               <div class="photo-users__likes">
-                                  <p class="photo-users__likes photo-users__likes--text">нравится</p>
-                                  <img class="photo-users__likes-image" src="#" alt="количество лайков">
+                                  <p class="photo-users__likes photo-users__likes--text">нравится: 2563</p>
+                                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+                                    <g>
+                                      <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
+                                    </g>
+                                  </svg>
                               </div>
                           </div>
                         </div>
@@ -150,11 +179,11 @@
           <section class="photo-load">
               <div class="photo-load__wrapper">
                   <div class="photo-load__content-wrapper">
-                    <p class="photo-load__content">Затмите их всех!Выкладывайте все,что накопилось в телефоне!</p>
+                    <p class="photo-load__content">Затмите их всех!<br>Выкладывайте все,что накопилось в<br> телефоне!</p>
                   </div>
                   <form class="photo-load__form">
                       <div class="photo-load__form-wrapper">
-                          <img class="photo-load__img" src="#" alt="Зимняя дорога">
+                          <img class="photo-load__img" src="img/photo-road-mobile@1x.jpg" alt="Зимняя дорога">
                           <div class="photo-load__tools">
                               <div class="photo-load__tools photo-load__tools--icons">
                               </div>
@@ -170,26 +199,38 @@
           </section>
       </main>
   </body>
-  <footer class="page-footer">
-      <div class="page-footer__wrapper">
-          <a class="logo" href="#"></a>
-          <div class="social">
-            <ul class="social__list">
-                <li class="social__item">
-                    <a class="social social--twitter" href="#">twitter</a>
-                </li>
-                <li class="social__item">
-                    <a class="social social--facebook" href="#">facebook</a>
-                </li>
-                <li class="social__item">
-                    <a class="social social--youtube" href="#">youtube</a>
-                </li>
-            </ul>
-          </div>
-          <div class="page-footer__copyright copyright">
-              <b class="copyright__text">Разработано:</b>
-              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </div>
-      </div>
+  <footer class="page__footer page__footer--index page-footer">
+    <a class="logo" href="#"><img src="img/logo-pink-blue-mobile.svg" alt="лого пинк"></a>
+    <ul class="page-footer__item page-footer__socials socials">
+      <li class="socials__item">
+        <a class="socials__link socials__link--tw" href="#">
+          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+            <g id="W6EeEF_1_">
+              <g>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z"/>
+              </g>
+            </g>
+          </svg>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link socials__link--fb" href="#"><svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
+          <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
+        </svg>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link socials__link--youtube" href="#"><svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
+          <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"/>
+        </svg>
+        </a>
+      </li>
+    </ul>
+    <div class="page-footer__copyright copyright">
+      <b class="copyright__text">Разработано:</b>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+        <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"/>
+      </svg></a>
+    </div>
   </footer>
 </html>
