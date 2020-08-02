@@ -1,0 +1,54 @@
+.photo {
+  margin-top: 45px;
+  background-color: $text-head;
+}
+
+.photo__slogan {
+  width: 243px;
+}
+
+.photo__wrapper {
+  margin-bottom: 49px;
+}
+
+@media ($tablet) {
+  .photo {
+    margin-top: 92px;
+  }
+
+  .photo__slogan {
+    width: 438px;
+  }
+
+  .photo__wrapper {
+    margin-bottom: 76px;
+  }
+
+  .photo__list-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  .photo__list-card .photo__card {
+    margin-top: 20px;
+    width: 300px;
+  }
+}
+
+@media ($desktop) {
+  .photo__slogan {
+    width: 571px;
+  }
+
+  .photo__wrapper {
+    margin-bottom: 88px;
+  }
+
+  .photo__list-card .photo__card {
+    &:nth-child(n+4) {
+      margin-top: 54px;
+    }
+  }
+}

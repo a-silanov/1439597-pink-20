@@ -1,8 +1,18 @@
 .burger {
   position: absolute;
-  top: 0;
+  top: -48px;
   right: 0;
-  width: 28px;
-  height: 24px;
-  margin-right: 20px;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+
+  &:hover path,
+  &:focus path {
+    fill: $pink;
+  }
+
+  &:active path {
+    fill: $down-mobile;
+  }
 }

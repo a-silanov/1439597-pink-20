@@ -1,0 +1,19 @@
+.container {
+  box-sizing: border-box;
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 320px;
+}
+
+@media ($tablet) {
+  .container {
+    max-width: 660px;
+  }
+}
+
+@media ($desktop) {
+  .container {
+    padding: 0 10px;
+    max-width: 960px;
+  }
+}

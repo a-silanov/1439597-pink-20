@@ -1,0 +1,26 @@
+.contacts__link {
+  display: block;
+
+  &:hover path,
+  &:focus path {
+    fill: $pink;
+  }
+
+  &:active path {
+    fill: $down-link;
+  }
+}
+
+.contacts__logo-desktop {
+  display: none;
+}
+
+@media ($desktop) {
+  .contacts__logo-mobile {
+    display: none;
+  }
+
+  .contacts__logo-desktop {
+    display: block;
+  }
+}

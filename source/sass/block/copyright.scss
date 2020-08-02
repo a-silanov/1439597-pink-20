@@ -1,0 +1,39 @@
+
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copyright__text {
+  padding: 0;
+  margin: 0;
+  line-height: 18px;
+}
+
+.copyright__link {
+  display: inline-block;
+
+  margin-top: 2px;
+  width: 27px;
+  height: 34px;
+
+  &:hover path,
+  &:focus path {
+    fill: $asphalt;
+  }
+
+  &:active path {
+    fill: $down-link;
+  }
+}
+
+@media (min-width: 960px) {
+  .copyright__text {
+    font-size: 18px;
+  }
+
+  .copyright__link {
+    margin-top: 6px;
+  }
+}
