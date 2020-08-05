@@ -1,14 +1,49 @@
 .submit {
+  display: block;
+  padding: 15px 0 14px 0;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  width: 276px;
   font-size: 18px;
   line-height: 30px;
-  font-weight: bold;
+  color: $text-head;
+  font-weight: 700;
   text-transform: uppercase;
-  color: #ffffff;
-  background-color: #2aab6d;
-  border: 2px solid #2aab6d;
-  border-radius: 1px;
-  padding-top: 23px;
-  padding-bottom: 23px;
-  padding-right: 45px;
-  padding-left: 67px;
+  text-align: center;
+  background-color: $green;
+  border: 2px solid $green;
+  border-radius: 2px;
+
+  &:hover,
+  &:focus {
+    background-color: $dark-green;
+    border: 2px solid $dark-green;
+  }
+
+  &:active {
+    color: $down-post;
+  }
+
+  &:disabled {
+    background-color: $grey;
+    border: 2px solid $grey;
+  }
+}
+
+.submit a {
+  color: $text-head;
+}
+
+@media ($tablet) {
+  .submit {
+    margin: 67px 0 50px 0;
+    width: 296px;
+  }
+}
+
+@media ($desktop) {
+  .submit {
+    margin: 0;
+    margin-top: 65px;
+  }
 }

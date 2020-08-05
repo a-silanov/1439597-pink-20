@@ -1,0 +1,169 @@
+.connections {
+  position: relative;
+  background-color: $text-head;
+  z-index: 1;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: -68px;
+    width: 100%;
+    height: 123px;
+    background-image: url("../img/bg-triangle-white-footer.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+  }
+}
+
+.connections__wrapper {
+  text-align: center;
+}
+
+.connections__question,
+.connections__link {
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.connections__question {
+  padding-top: 42px;
+  line-height: 29px;
+}
+
+.connections__list {
+  padding: 0;
+  padding-top: 34px;
+  margin: 0;
+  list-style: none;
+}
+
+.connections__item {
+  &:nth-child(1) {
+    padding-bottom: 19px;
+  }
+
+  &:nth-child(2) {
+    padding-bottom: 24px;
+  }
+}
+
+.connections__text {
+  display: block;
+  font-size: 18px;
+}
+
+.connections__link {
+  line-height: 31px;
+  color: $pink;
+
+  &:hover,
+  &:focus {
+    color: $asphalt;
+    border-bottom: 2px solid $asphalt;
+  }
+
+  &:active {
+    color: $down-link;
+    border: none;
+  }
+}
+
+@media ($tablet) {
+  .connections {
+    &::after {
+      bottom: -94px;
+      height: 123px;
+    }
+  }
+
+  .connections__question {
+    padding-top: 46px;
+    margin: 0 auto;
+    width: 371px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .connections__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 43px;
+  }
+
+  .connections__item {
+    padding: 0;
+    width: 211px;
+
+    &:nth-child(1) {
+      margin-right: 23px;
+    }
+
+    &:nth-child(2) {
+      padding-bottom: 45px;
+    }
+  }
+
+  .connections__text {
+    padding-bottom: 3px;
+  }
+
+  .connections__link {
+    &--margin {
+      margin-left: -15px;
+    }
+  }
+}
+
+@media ($desktop) {
+  .connections {
+    &::after {
+      bottom: -127px;
+      height: 170px;
+    }
+  }
+
+  .connections__question {
+    padding-top: 64px;
+    width: 461px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .connections__list {
+    justify-content: flex-start;
+    padding-top: 56px;
+  }
+
+  .connections__item {
+    padding: 0;
+    width: 211px;
+
+    &:nth-child(1) {
+      margin-right: 23px;
+      margin-left: 45px;
+    }
+
+    &:nth-child(2) {
+      margin-left: 108px;
+      order: 1;
+    }
+
+    &:nth-child(3) {
+      margin-left: 86px;
+    }
+  }
+
+  .connections__text {
+    padding-bottom: 23px;
+  }
+
+  .connections__link {
+    line-height: 27px;
+  }
+}

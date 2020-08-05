@@ -1,0 +1,54 @@
+.page-title {
+  text-align: center;
+  color: white;
+}
+
+.page-title__text {
+  padding: 0;
+  padding-top: 31px;
+  margin: 0 auto;
+  width: 168px;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  color: white;
+
+  &--photo {
+    padding-bottom: 83px;
+  }
+
+  &--form {
+    padding-bottom: 53px;
+    width: 228px;
+  }
+}
+
+@media (min-width: 660px) {
+  .page-title__text {
+    padding-top: 72px;
+    font-size: 50px;
+    line-height: 60px;
+    width: 356px;
+
+    &--photo {
+      padding-bottom: 139px;
+    }
+
+    &--form {
+      padding-top: 71px;
+      padding-bottom: 80px;
+      width: 474px;
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .page-title__text {
+    padding-top: 63px;
+    padding-bottom: 101px;
+
+    &--form {
+      width: 747px;
+    }
+  }
+}

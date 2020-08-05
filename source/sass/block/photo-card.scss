@@ -1,0 +1,212 @@
+.photo-card {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.photo-card__image-mobile {
+  &--panorama {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.photo-card__image-tablet,
+.photo-card__image-desktop {
+  display: none;
+}
+
+.photo-card__quote {
+  padding: 17px 0 20px 18px;
+  margin: 0;
+  margin-top: -7px;
+  background-color: $light-grey;
+
+  &--position {
+    padding-bottom: 19px;
+  }
+}
+
+.photo-card__quote--panorama {
+  position: relative;
+
+  &::before {
+    content: "Панорама дня";
+
+    position: absolute;
+    top: -137px;
+    right: 0;
+    padding-top: 6px;
+    width: 140px;
+    height: 30px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $text-head;
+    background-color: $pink;
+  }
+}
+
+.photo-card__author {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.photo-card__author-name {
+  font-size: 14px;
+  text-transform: none;
+}
+
+.photo-card__text {
+  padding: 0;
+  padding-bottom: 10px;
+  margin: 0;
+  width: 251px;
+
+  &--position {
+    padding-bottom: 9px;
+  }
+
+  &--padding {
+    padding-bottom: 8px;
+  }
+}
+
+.photo-card__heart {
+  position: relative;
+  top: 1px;
+  margin-right: 4px;
+  width: 13px;
+  height: 12px;
+  background-color: transparent;
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.photo-card__like {
+  padding-left: 11px;
+
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $pink;
+}
+
+@media ($tablet) {
+  .photo-card__image-mobile,
+  .photo-card__image-desktop {
+    display: none;
+  }
+
+  .photo-card__image-tablet {
+    display: block;
+
+    &--panorama {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .photo-card__quote {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 0 21px 27px;
+    margin-top: 0;
+    min-height: 110px;
+  }
+
+  .photo-card__quote--panorama {
+    padding: 23px 0 16px 27px;
+    margin: 0;
+    min-height: 81px;
+
+    &::before {
+      top: -452px;
+    }
+  }
+
+  .photo-card__text {
+    &--panorama {
+      width: 519px;
+    }
+  }
+
+  .photo-card__heart {
+    position: absolute;
+    top: 114px;
+    right: 28px;
+
+    &--panorama {
+      position: absolute;
+      top: 30px;
+      right: 25px;
+    }
+  }
+
+  .photo-card__like {
+    padding: 0;
+    margin-top: auto;
+
+    &--panorama {
+      position: absolute;
+      top: 25px;
+      right: 59px;
+    }
+  }
+}
+
+@media ($desktop) {
+  .photo-card__image-mobile,
+  .photo-card__image-tablet {
+    display: none;
+  }
+
+  .photo-card__image-desktop {
+    display: block;
+
+    &--panorama {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .photo-card__quote {
+    min-height: 110px;
+    padding: 23px 0 22px 27px;
+
+    &--panorama {
+      padding: 24px 0 14px 27px;
+      margin: 0;
+      min-height: 58px;
+    }
+  }
+
+  .photo-card__text {
+    &--panorama {
+      width: 873px;
+    }
+  }
+
+  .photo-card__heart {
+    &--panorama {
+      top: 30px;
+      right: 28px;
+    }
+  }
+
+  .photo-card__like {
+    &--panorama {
+      right: 62px;
+    }
+  }
+}

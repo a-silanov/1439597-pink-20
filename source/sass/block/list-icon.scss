@@ -1,0 +1,64 @@
+.list-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 37px 0 36px;
+  list-style: none;
+}
+
+.list-icon__link {
+  display: block;
+  width: 47px;
+  height: 56px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &--apple {
+    width: 50px;
+    height: 58px;
+    background-image: url("../img/logo-apple.svg");
+  }
+
+  &--android {
+    margin-top: 6px;
+    margin-right: 5px;
+    width: 43px;
+    height: 47px;
+    background-image: url("../img/logo-android.svg");
+  }
+
+  &--windows {
+    margin-top: 8px;
+    width: 44px;
+    height: 41px;
+
+    background-image: url("../img/logo-microsoft.svg");
+  }
+}
+
+
+@media ($tablet) {
+  .list-icon {
+    padding: 0 29px 0 36px;
+  }
+
+  .list-icon__link {
+    &--android {
+      margin-top: 3px;
+      margin-right: 1px;
+    }
+  }
+}
+
+@media ($desktop) {
+  .list-icon {
+    padding: 0 28px 0 37px;
+  }
+
+  .list-icon__link {
+    &--android {
+      margin-top: 6px;
+      margin-right: 3px;
+    }
+  }
+}

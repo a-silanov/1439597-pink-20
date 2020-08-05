@@ -1,0 +1,46 @@
+.slider__toggle {
+  padding: 0;
+  margin: 0;
+  width: 6px;
+  height: 6px;
+
+  background-color: $down-link;
+  border: none;
+  border-radius: 50%;
+
+  &:nth-child(1) {
+    margin-right: 12px;
+  }
+
+  &:nth-child(2) {
+    margin-right: 16px;
+  }
+
+  &--position {
+    margin-left: -3px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $slider-toggle;
+    cursor: pointer;
+  }
+
+  &:active {
+    background-color: $down-cancel;
+  }
+
+  &--active {
+    width: 12px;
+    height: 12px;
+
+    background-color: $text-head;
+    border: 3px solid $asphalt;
+  }
+
+  &--active:hover,
+  &--active:focus,
+  &--active:active {
+    background-color: $text-head;
+  }
+}
