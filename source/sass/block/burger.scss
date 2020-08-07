@@ -16,3 +16,9 @@
     fill: $down-mobile;
   }
 }
+
+@media($desktop) {
+  .burger {
+    display: none;
+  }
+}
