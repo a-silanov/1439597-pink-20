@@ -1,0 +1,166 @@
+.modal {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  display: none;
+  box-sizing: border-box;
+  margin-left: -160px;
+  width: 320px;
+  text-align: center;
+  background-color: $text-head;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  z-index: 10;
+
+  &--show {
+    display: block;
+    animation: bounce 0.6s;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.modal__background {
+  padding-top: 48px;
+  padding-bottom: 52px;
+  background-color: $light-grey;
+
+  &--eror {
+    padding-top: 8px;
+    padding-bottom: 50px;
+
+    background-color: $text-head;
+  }
+}
+
+
+.modal__heading {
+  padding: 0;
+  margin: 40px auto 26px auto;
+  font-size: 18px;
+  font-weight: 700;
+  color: $black;
+}
+
+.modal__text {
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  &--sent {
+    width: 265px;
+  }
+}
+
+.modal__button {
+  display: block;
+  padding: 15px 0 14px 0;
+  margin: 0 auto;
+  width: 280px;
+  font-size: 18px;
+  line-height: 30px;
+  color: $text-head;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: $green;
+  border: 2px solid $green;
+  border-radius: 2px;
+
+  &:hover,
+  &:focus {
+    background-color: $dark-green;
+    border: 2px solid $dark-green;
+  }
+
+  &:active {
+    color: $down-post;
+  }
+}
+
+@media ($tablet) {
+  .modal {
+    margin-left: -230px;
+    width: 460px;
+  }
+
+  .modal__background {
+    &--eror {
+      padding-top: 4px;
+      padding-bottom: 52px;
+      background-color: $text-head;
+    }
+  }
+
+  .modal__heading {
+    margin: 36px auto 22px auto;
+    width: 260px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .modal__text {
+    margin-bottom: 34px;
+    width: 306px;
+    font-size: 18px;
+  }
+
+  .modal__br {
+    display: none;
+  }
+
+  .modal__button {
+    width: 300px;
+  }
+}
+
+@media ($desktop) {
+  .modal {
+    margin-left: -390px;
+    width: 780px;
+  }
+
+  .modal__background {
+    padding-top: 48px;
+    padding-bottom: 52px;
+
+    &--eror {
+      padding-top: 47px;
+      padding-bottom: 53px;
+
+      background-color: $light-grey;
+    }
+  }
+
+  .modal__heading {
+    margin-top: 42px;
+    width: 400px;
+  }
+
+  .modal__text {
+    margin-bottom: 62px;
+    width: 380px;
+
+    font-size: 18px;
+
+    &--sent {
+      margin-bottom: 38px;
+    }
+  }
+
+  .modal__button {
+    margin: 0 auto;
+    width: 300px;
+
+    &--sent {
+      width: 460px;
+    }
+  }
+}

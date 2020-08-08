@@ -90,7 +90,7 @@
   margin: 0;
 }
 
-@media (min-width: 660px) {
+@media ($tablet) {
   .reviews {
     &::after {
       bottom: -78px;
@@ -130,7 +130,7 @@
   }
 }
 
-@media (min-width: 960px) {
+@media ($desktop) {
   .reviews {
     &::after {
       bottom: -130px;
