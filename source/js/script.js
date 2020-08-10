@@ -1,4 +1,4 @@
-// Открытие/закрытие меню на мобильном/планшете
+// Открытие/закрытие меню на мобильном/планшете //
 var header = document.querySelector(".page-header");
 var nav = document.querySelector(".main-nav");
 var navToggle = document.querySelector(".burger");
@@ -22,9 +22,8 @@ navToggle.addEventListener("click", function() {
   }
 });
 
-// Проверка формы и выдача попапов
+// Проверка формы и выдача попапов //
 var form = document.querySelector("form");
-
 var popup = document.querySelector(".modal");
 var eror = document.querySelector(".modal--eror");
 var sent = document.querySelector(".modal--sent");
