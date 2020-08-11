@@ -84,19 +84,19 @@
 
 .price__set-pink {
   &::before {
-    content: "Розовый фильтр";
+    content: attr(data-text);
   }
 }
 
 .price__set-smile {
   &::before {
-    content: "Смайлики";
+    content: attr(data-text);
   }
 }
 
 .price__set-com {
   &::before {
-    content: "Комментарии";
+    content: attr(data-text);
   }
 }
 

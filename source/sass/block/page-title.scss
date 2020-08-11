@@ -23,7 +23,7 @@
   }
 }
 
-@media (min-width: 660px) {
+@media ($tablet) {
   .page-title__text {
     padding-top: 72px;
     font-size: 50px;
@@ -42,7 +42,7 @@
   }
 }
 
-@media (min-width: 960px) {
+@media ($desktop) {
   .page-title__text {
     padding-top: 63px;
     padding-bottom: 101px;
