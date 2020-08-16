@@ -73,9 +73,11 @@
         </div>
         <div class="photo__card photo__card--panorama photo-card">
           <a class="photo-card__image" href="#">
-            <img class="photo-card__image-mobile photo-card__image-mobile--panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="panorama">
-            <img class="photo-card__image-tablet photo-card__image-tablet--panorama" src="img/panorama-tablet@1x.jpg" width="700" height="509" alt="panorama">
-            <img class="photo-card__image-desktop photo-card__image-desktop--panorama" src="img/panorama-desktop@1x.jpg" width="1200" height="506" alt="panorama">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/panorama-desktop@2x.jpg 2x, img/panorama-desktop@1x.jpg 1x">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@2x.jpg 2x, img/panorama-tablet@1x.jpg 1x">
+              <img class="photo-card__image photo-card__image--panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="panorama">
+            </picture>
           </a>
           <div class="photo-card__wrapper container">
             <blockquote class="photo-card__quote photo-card__quote--panorama">
@@ -89,9 +91,11 @@
         <div class="photo__list-card container">
           <div class="photo__card photo-card">
             <a class="photo-card__image" href="#">
-              <img class="photo-card__image-mobile" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="camera and car">
-              <img class="photo-card__image-tablet" src="img/photo-car-tablet@1x.jpg" width="300" height="300" alt="camera and car">
-              <img class="photo-card__image-desktop" src="img/photo-car-desktop@1x.jpg" width="300" height="400" alt="camera and car">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-car-desktop@2x.jpg 2x, img/photo-car-desktop@1x.jpg 1x">
+                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@2x.jpg 2x, img/photo-car-tablet@1x.jpg 1x">
+                <img class="photo-card__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" width="280" height="180" alt="camera and car">
+              </picture>
             </a>
             <blockquote class="photo-card__quote">
               <cite class="photo-card__author"><b class="photo-card__author-name">Левон</b> (5 часов назад)</cite>
@@ -103,9 +107,11 @@
           </div>
           <div class="photo__card photo-card">
             <a class="photo-card__image" href="#">
-              <img class="photo-card__image-mobile" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="guitars">
-              <img class="photo-card__image-tablet" src="img/photo-drumset-tablet@1x.jpg" width="300" height="300" alt="guitars">
-              <img class="photo-card__image-desktop" src="img/photo-drumset-desktop@1x.jpg" width="300" height="400" alt="guitars">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@2x.jpg 2x, img/photo-drumset-desktop@1x.jpg 1x">
+                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@2x.jpg 2x, img/photo-drumset-tablet@1x.jpg 1x">
+                <img class="photo-card__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" width="280" height="180" alt="guitars">
+              </picture>
             </a>
             <blockquote class="photo-card__quote">
               <cite class="photo-card__author"><b class="photo-card__author-name">Антон</b> (12 часов назад)</cite>
@@ -116,9 +122,11 @@
           </div>
           <div class="photo__card photo-card">
             <a class="photo-card__image" href="#">
-              <img class="photo-card__image-mobile" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="sky">
-              <img class="photo-card__image-tablet" src="img/photo-window-tablet@1x.jpg" width="300" height="300" alt="sky">
-              <img class="photo-card__image-desktop" src="img/photo-window-desktop@1x.jpg" width="300" height="400" alt="sky">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-window-desktop@2x.jpg 2x, img/photo-window-desktop@1x.jpg 1x">
+                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@2x.jpg 2x, img/photo-window-tablet@1x.jpg 1x">
+                <img class="photo-card__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" width="280" height="180" alt="sky">
+              </picture>
             </a>
             <blockquote class="photo-card__quote">
               <cite class="photo-card__author"><b class="photo-card__author-name">Борис</b> (20 часов назад)</cite>
@@ -129,9 +137,11 @@
           </div>
           <div class="photo__card photo-card">
             <a class="photo-card__image" href="#">
-              <img class="photo-card__image-mobile" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="kuban melon">
-              <img class="photo-card__image-tablet" src="img/photo-fair-tablet@1x.jpg" width="300" height="300" alt="kuban melon">
-              <img class="photo-card__image-desktop" src="img/photo-fair-desktop@1x.jpg" width="300" height="400" alt="kuban melon">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@2x.jpg 2x, img/photo-fair-desktop@1x.jpg 1x">
+                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@2x.jpg 2x, img/photo-fair-tablet@1x.jpg 1x">
+                <img class="photo-card__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" width="280" height="180" alt="kuban melon">
+              </picture>
             </a>
             <blockquote class="photo-card__quote">
               <cite class="photo-card__author"><b class="photo-card__author-name">Сергей</b> (25 часов назад)</cite>
@@ -142,9 +152,11 @@
           </div>
           <div class="photo__card photo-card">
             <a class="photo-card__image" href="#">
-              <img class="photo-card__image-mobile" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="mountains">
-              <img class="photo-card__image-tablet" src="img/photo-pov-tablet@1x.jpg" width="300" height="300" alt="mountains">
-              <img class="photo-card__image-desktop" src="img/photo-pov-desktop@1x.jpg" width="300" height="400" alt="mountains">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@2x.jpg 2x, img/photo-pov-desktop@1x.jpg 1x">
+                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@2x.jpg 2x, img/photo-pov-tablet@1x.jpg 1x">
+                <img class="photo-card__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" width="280" height="180" alt="mountains">
+              </picture>
             </a>
             <blockquote class="photo-card__quote">
               <cite class="photo-card__author"><b class="photo-card__author-name">Максим</b> (40 часов назад)</cite>
@@ -155,9 +167,11 @@
           </div>
           <div class="photo__card photo-card">
             <a class="photo-card__image" href="#">
-              <img class="photo-card__image-mobile" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="plane">
-              <img class="photo-card__image-tablet" src="img/photo-wing-tablet@1x.jpg" width="300" height="300" alt="plane">
-              <img class="photo-card__image-desktop" src="img/photo-wing-desktop@1x.jpg" width="300" height="400" alt="plane">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@2x.jpg 2x, img/photo-wing-desktop@1x.jpg 1x">
+                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@2x.jpg 2x, img/photo-wing-tablet@1x.jpg 1x">
+                <img class="photo-card__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" width="280" height="180" alt="plane">
+              </picture>
             </a>
             <blockquote class="photo-card__quote">
               <cite class="photo-card__author"><b class="photo-card__author-name">Надежда</b> (45 часов назад)</cite>
@@ -176,9 +190,11 @@
             <div class="photo-load__send editing">
               <div class="editing__wrapper container">
                 <form class="editing__change" action="https://echo.htmlacademy.ru" method="post">
-                  <img class="editing__image-mobile" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="selected image">
-                  <img class="editing__image-tablet" src="img/photo-road-tablet@1x.jpg" width="300" height="400" alt="selected image">
-                  <img class="editing__image-desktop" src="img/photo-road-desktop@1x.jpg" width="300" height="400" alt="selected image">
+                  <picture>
+                    <source media="(min-width: 960px)" srcset="img/photo-road-desktop@2x.jpg 2x, img/photo-road-desktop@1x.jpg 1x">
+                    <source media="(min-width: 660px)" srcset="img/photo-road-tablet@2x.jpg 2x, img/photo-road-tablet@1x.jpg 1x">
+                    <img class="editing__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" width="280" height="374" alt="selected image">
+                  </picture>
 
                   <div class="editing__tools-wrapper">
                     <div class="editing__icon-wrapper">

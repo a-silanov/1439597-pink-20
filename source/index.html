@@ -102,9 +102,11 @@
         <section class="promo">
           <h1 class="visually-hidden">Пинк - раскрасьте серые будни</h1>
           <p class="promo__slogan">Взгляните на жизнь иначе!</p>
-          <img class="promo__image-mobile" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="example">
-          <img class="promo__image-tablet" src="img/iphone-hand-tablet@1x.png" width="517" height="544" alt="example">
-          <img class="promo__image-desktop" src="img/iphone-hand-desktop@1x.png" width="680" height="645" alt="example">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@2x.png 2x, img/iphone-hand-desktop@1x.png 1x">
+            <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@2x.png 2x, img/iphone-hand-tablet@1x.png 1x">
+            <img class="promo__image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" width="258" height="286" alt="example">
+          </picture>
 
           <div class="promo__download">
             <a class="promo__link" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
@@ -290,9 +292,11 @@
     <div class="map">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1886.5075243794693!2d30.321652558284974!3d59.93736777281477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1577290360960!5m2!1sru!2sru" allowfullscreen="">
       </iframe>
-      <img class="map__image map__mobile" src="img/bg-map-mobile@1x.png" width="320" height="645" alt="ул. Большая Конюшенная, 19/8">
-      <img class="map__image map__tablet" src="img/bg-map-tablet@1x.jpg" width="700" height="848" alt="ул. Большая Конюшенная, 19/8">
-      <img class="map__image map__desktop" src="img/bg-map-desktop@1x.jpg" width="1200" height="976" alt="ул. Большая Конюшенная, 19/8">
+      <picture>
+        <source media="(min-width: 960px)" srcset="img/bg-map-desktop@2x.jpg 2x, img/bg-map-desktop@1x.jpg 1x">
+        <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 2x, img/bg-map-tablet@1x.jpg 1x">
+        <img class="map__image" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" width="320" height="645" alt="example">
+      </picture>
     </div>
   </main>
   </body>

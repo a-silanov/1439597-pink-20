@@ -25,7 +25,7 @@ navToggle.addEventListener("click", function() {
 // Проверка формы и выдача попапов //
 var form = document.querySelector("form");
 var popup = document.querySelector(".modal");
-var eror = document.querySelector(".modal--eror");
+var error = document.querySelector(".modal--error");
 var sent = document.querySelector(".modal--sent");
 var close = document.querySelector(".modal__button");
 var closeSent = document.querySelector(".modal__button--sent");
@@ -36,7 +36,7 @@ var usersEmail = document.querySelector("[name=usersEmail]");
 form.addEventListener("submit", function (evt) {
   if (!secondName.validity.valid || !firstName.validity.valid || !usersEmail.validity.valid) {
     evt.preventDefault();
-    eror.classList.add("modal--show");
+    error.classList.add("modal--show");
   } else {
     evt.preventDefault();
     sent.classList.add("modal--show");
@@ -56,8 +56,8 @@ closeSent.addEventListener("click", function (evt) {
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
-    if (eror.classList.contains("modal--show")) {
-      eror.classList.remove("modal--show");
+    if (error.classList.contains("modal--show")) {
+      error.classList.remove("modal--show");
     } else {
       sent.classList.remove("modal--show");
     }
