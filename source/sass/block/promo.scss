@@ -12,17 +12,9 @@
   font-weight: 300;
 }
 
-.promo__image-mobile {
+.promo__image {
   padding-top: 28px;
   margin-left: -62px;
-}
-
-.promo__image-tablet {
-  display: none;
-}
-
-.promo__image-desktop {
-  display: none;
 }
 
 .promo__download {
@@ -84,15 +76,15 @@
     z-index: 1;
   }
 
-  .promo__image-mobile {
-    display: none;
-  }
-
-  .promo__image-tablet {
+  .promo__image {
     position: absolute;
     display: block;
     top: 73px;
     right: -13px;
+    padding: 0;
+    margin: 0;
+    width: 517px;
+    height: 545px;
   }
 
   .promo__download {
@@ -137,19 +129,11 @@
     line-height: 60px;
   }
 
-  .promo__image-mobile {
-    display: none;
-  }
-
-  .promo__image-tablet {
-    display: none;
-  }
-
-  .promo__image-desktop {
-    position: absolute;
-    display: block;
+  .promo__image {
     top: 99px;
-    right: 19px;
+    right: 13px;
+    width: 634px;
+    height: 645px;
   }
 
   .promo__download {
