@@ -1,13 +1,15 @@
 .contacts__link {
   display: block;
+  color: $asphalt;
 
-  &:hover path,
-  &:focus path {
-    fill: $pink;
+  &:hover,
+  &:focus {
+    color: $pink;
   }
 
-  &:active path {
-    fill: $down-link;
+  &:active {
+    opacity: 0.3;
+    color: $asphalt;
   }
 }
 

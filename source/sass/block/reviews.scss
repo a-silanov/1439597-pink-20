@@ -33,6 +33,7 @@
   height: 41px;
   background-color: transparent;
   border: none;
+  color: $down-link;
 
   &--left {
     left: 10px;
@@ -42,17 +43,13 @@
     right: 10px;
   }
 
-  path {
-    fill: $down-link;
+  &:hover,
+  &:focus {
+    color: $slider-toggle;
   }
 
-  &:hover path,
-  &:focus path {
-    fill: $slider-toggle;
-  }
-
-  &:active path {
-    fill: $down-cancel;
+  &:active {
+    color: $down-cancel;
   }
 }
 

@@ -17,14 +17,15 @@
   margin-top: 2px;
   width: 27px;
   height: 34px;
+  color: $pink;
 
-  &:hover path,
-  &:focus path {
-    fill: $asphalt;
+  &:hover,
+  &:focus {
+    color: $asphalt;
   }
 
-  &:active path {
-    fill: $down-link;
+  &:active {
+    color: $down-link;
   }
 }
 
