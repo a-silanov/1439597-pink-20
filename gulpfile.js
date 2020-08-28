@@ -56,7 +56,8 @@ const copy = () => {
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "source/js/**",
-    "source/*.ico"
+    "source/*.ico",
+    "source/*.html"
   ], {
     base: "source"
   })
@@ -120,3 +121,7 @@ exports.default = gulp.series(
 const build = gulp.series(clean, copy, styles, images, webp, sprite);
 
 exports.build = build
+
+const start = gulp.series(build,server);
+
+exports.start = start
