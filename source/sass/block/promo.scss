@@ -18,7 +18,7 @@
 }
 
 .promo__download {
-  margin: -7px 0 0 -20px;
+  margin: -7px 0 0 2px;
   padding: 28px 21px 30px 19px;
   width: 280px;
   text-align: center;
@@ -27,8 +27,8 @@
 
 .promo__link {
   display: block;
-  padding: 15px 35px 16px 36px;
-  width: 204px;
+  padding: 17px 24px 16px 27px;
+  width: 222px;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
@@ -53,8 +53,8 @@
 }
 
 .promo__text {
-  padding-top: 10px;
-  padding-left: 21px;
+  padding-top: 8px;
+  padding-left: 20px;
   margin: 0;
   width: 240px;
   font-weight: 300;
@@ -68,9 +68,9 @@
   }
 
   .promo__slogan {
-    padding-top: 92px;
+    padding-top: 93px;
     margin: 0;
-    margin-left: 37px;
+    margin-left: 58px;
     font-size: 40px;
     line-height: 48px;
     z-index: 1;
@@ -80,7 +80,7 @@
     position: absolute;
     display: block;
     top: 73px;
-    right: -13px;
+    right: 7px;
     padding: 0;
     margin: 0;
     width: 517px;
@@ -88,15 +88,16 @@
   }
 
   .promo__download {
-    padding: 38px 20px 110px 0;
+    padding: 34px 20px 125px 20px;
     margin-left: 0;
     background-color: transparent;
     z-index: 1;
   }
 
   .promo__link {
-    padding: 14px 36px 17px 36px;
-    width: 221px;
+    padding: 16px 38px 15px 36px;
+    width: 220px;
+    margin-top: 3px;
   }
 
   .promo__list {
@@ -104,7 +105,7 @@
   }
 
   .promo__text {
-    padding-top: 35px;
+    padding-top: 31px;
     padding-left: 0;
     margin-left: -4px;
     width: 308px;
@@ -118,10 +119,11 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    margin-left: 130px;
   }
 
   .promo__slogan {
-    padding-top: 108px;
+    padding-top: 105px;
     margin: 0;
     margin-left: 30px;
     width: 241px;
@@ -131,7 +133,7 @@
 
   .promo__image {
     top: 99px;
-    right: 13px;
+    right: 143px;
     width: 634px;
     height: 645px;
   }

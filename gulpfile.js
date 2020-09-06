@@ -24,8 +24,9 @@ const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
-    .pipe(rename("styles.min.css"))
+    .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
@@ -56,7 +57,6 @@ const copy = () => {
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "source/js/**",
-    "source/*.ico",
     "source/*.html"
   ], {
     base: "source"
@@ -86,39 +86,45 @@ exports.clean = clean;
 
 // Server
 
-const server = (done) => {
+const server = () => {
   sync.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
     ui: false,
   });
-  done();
+  gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
+  gulp.watch("source/*.html", gulp.series("html")).on("change", sync.reload);
 }
 
 exports.server = server;
 
+//Html
+
 const html = () => {
-  return gulp.src("source/html")
+  return gulp.src("source/*.html")
+  //.pipe(htmlMinimizer({collapseWhitespace: true}))
   .pipe(gulp.dest("build"));
 }
 
 exports.html = html
 
 // Watcher
+//
+//const watcher = () => {
+//  gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
+//  gulp.watch("source/*.html").on("change", sync.reload);
+//}
 
-const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", sync.reload);
-}
+// exports.watcher = watcher;
 
 exports.default = gulp.series(
-  styles, server, watcher
+  styles, server
 );
 
-const build = gulp.series(clean, copy, styles, images, webp, sprite);
+const build = gulp.series(clean, copy, styles, html, images, webp, sprite);
 
 exports.build = build
 

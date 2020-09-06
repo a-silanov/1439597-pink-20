@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <title>HTML Academy: Пинк</title>
   </head>
   <body class="page">
@@ -198,7 +199,7 @@
         </div>
       </nav>
 
-      <div class="page-header__wrapper container">
+      <div class="page-header__wrapper">
         <section class="promo">
           <h1 class="visually-hidden">Пинк - раскрасьте серые будни</h1>
           <p class="promo__slogan">Взгляните на жизнь иначе!</p>
@@ -299,78 +300,102 @@
       </div>
     </section>
 
-    <section class="price">
-      <div class="price__wrapper slider">
-        <table class="price__list">
-          <tr>
-            <th class="visually-hidden">Тариф</th>
-            <td class="price__type price__type--left">
-              <b>База</b>
-            </td>
-            <td class="price__type price__type--center">
-              <div class="price__hit">
-                <p class="price__hit-text">Хит</p>
-              </div>
-              <b>Стандарт</b>
-            </td>
-            <td class="price__type price__type--right">
-              <b>Анлим</b>
-            </td>
-          </tr>
-          <tr>
-            <th class="visually-hidden">Цена</th>
-            <td class="price__value price__value--left">
-              <p>1,99 USD</p>
-            </td>
-            <td class="price__value price__value--center">
-              <p>3,99 USD</p>
-            </td>
-            <td class="price__value price__value--right">
-              <p>9,99 USD</p>
-            </td>
-          </tr>
-          <tr>
-            <th class="price__set price__set--border" data-text="Розовый фильтр">Розовый фильтр</th>
-            <td class="price__set-yes price__set-pink">
-              <span class="visually-hidden">Да</span>
-            </td>
-            <td class="price__set-yes price__set-pink">
-              <span class="visually-hidden">Да</span>
-            </td>
-            <td class="price__set-yes price__set-pink">
-              <span class="visually-hidden">Да</span>
-            </td>
-          </tr>
-          <tr>
-            <th class="price__set" data-text="Смайлики">Смайлики</th>
-            <td class="price__set-no price__set-smile">
-              <span class="visually-hidden">Нет</span>
-            </td>
-            <td class="price__set-yes price__set-smile">
-              <span class="visually-hidden">Да</span>
-            </td>
-            <td class="price__set-yes price__set-smile">
-              <span class="visually-hidden">Да</span>
-            </td>
-          </tr>
-          <tr>
-            <th class="price__set" data-text="Комментарии">Комментарии</th>
-            <td class="price__set-no price__set-com">
-              <span class="visually-hidden">Нет</span>
-            </td>
-            <td class="price__set-no price__set-com">
-              <span class="visually-hidden">Нет</span>
-            </td>
-            <td class="price__set-yes price__set-com">
-              <span class="visually-hidden">Да</span>
-            </td>
-          </tr>
-        </table>
-      <div class="price__toggle slider__toggles">
-        <button class="slider__toggle" type="button" aria-label="Посмотреть базовый тариф"></button>
-        <button class="slider__toggle slider__toggle--active" type="button" aria-label="Посмотреть стандартный тариф"></button>
-        <button class="slider__toggle" type="button" aria-label="Посмотреть полный тариф"></button>
-      </div>
+    <section class="tarrif">
+      <h2 class="visually-hidden">Варианты подписки</h2>
+      <div class="tarrif__wrapper">
+        <div class="tarrif__items slider">
+          <input class="tarrif__btn tarrif__btn--one slider__input slider__input--one" id="tarrif-radio-1" type="radio" name="sliderBtn">
+          <input class="tarrif__btn tarrif__btn--two slider__input slider__input--two" id="tarrif-radio-2" type="radio" name="sliderBtn" checked>
+          <input class="tarrif__btn tarrif__btn--three slider__input slider__input--three" id="tarrif-radio-3" type="radio" name="sliderBtn">
+          <table class="tarrif__list">
+            <tr class="tarrif__head">
+              <th class="tarrif__value tarrif__value--invisible"></th>
+              <th class="tarrif__value">
+                База
+                <p>1,99 USD</p>
+              </th>
+              <th class="tarrif__value">
+                Стандарт
+                <p>3,99 USD</p>
+                <div class="tarrif__hit">
+                  <span class="tarrif__hit-text">Хит</span>
+                </div>
+              </th>
+              <th class="tarrif__value">
+                Анлим
+                <p>9,99 USD</p>
+              </th>
+            </tr>
+            <tr class="tarrif__body">
+              <td class="tarrif__set tarrif__set--invisible">Розовый фильтр</td>
+              <td class="tarrif__set tarrif__set--yes">
+                Розовый фильтр
+                <svg class="tarrif__yes" width="31" height="21">
+                  <use xlink:href="#yes"></use>
+                </svg>
+              </td>
+              <td class="tarrif__set tarrif__set--yes">
+                Розовый фильтр
+                <svg class="tarrif__yes" width="31" height="21">
+                  <use xlink:href="#yes"></use>
+                </svg>
+              </td>
+              <td class="tarrif__set tarrif__set--yes">
+                Розовый фильтр
+                <svg class="tarrif__yes" width="31" height="21">
+                  <use xlink:href="#yes"></use>
+                </svg>
+              </td>
+            </tr>
+            <tr class="tarrif__body">
+              <td class="tarrif__set tarrif__set--invisible">Смайлики</td>
+              <td class="tarrif__set tarrif__set--no">
+                Смайлики
+                <svg class="tarrif__no" width="27" height="26">
+                  <use xlink:href="#no"></use>
+                </svg>
+              </td>
+              <td class="tarrif__set tarrif__set--yes">
+                Смайлики
+                <svg class="tarrif__yes" width="31" height="21">
+                  <use xlink:href="#yes"></use>
+                </svg>
+              </td>
+              <td class="tarrif__set tarrif__set--yes">
+                Смайлики
+                <svg class="tarrif__yes" width="31" height="21">
+                  <use xlink:href="#yes"></use>
+                </svg>
+              </td>
+            </tr>
+            <tr class="tarrif__body">
+              <td class="tarrif__set tarrif__set--invisible">Комментарии</td>
+              <td class="tarrif__set tarrif__set--no">
+                Комментарии
+                <svg class="tarrif__no" width="27" height="26">
+                  <use xlink:href="#no"></use>
+                </svg>
+              </td>
+              <td class="tarrif__set tarrif__set--no">
+                Комментарии
+                <svg class="tarrif__no" width="27" height="26">
+                  <use xlink:href="#no"></use>
+                </svg>
+              </td>
+              <td class="tarrif__set tarrif__set--yes">
+                Комментарии
+                <svg class="tarrif__yes" width="31" height="21">
+                  <use xlink:href="#yes"></use>
+                </svg>
+              </td>
+            </tr>
+          </table>
+          <div class="tarrif__nav slider__wrapper">
+            <label class="slider__toggle slider__toggle--one" for="tarrif-radio-1" aria-label="Посмотреть базовый тариф"></label>
+            <label class="slider__toggle slider__toggle--two" for="tarrif-radio-2" aria-label="Посмотреть стандартный тариф"></label>
+            <label class="slider__toggle slider__toggle--three" for="tarrif-radio-3" aria-label="Посмотреть полный тариф"></label>
+          </div>
+        </div>
       </div>
     </section>
     <section class="connections">

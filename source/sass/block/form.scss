@@ -28,7 +28,7 @@
 .form__wrapper,
 .form__fieldset {
   padding: 0;
-  margin: 0;
+  margin: 1px;
 }
 
 .form__fieldset {
@@ -145,7 +145,7 @@
   resize: none;
 }
 
-@media (min-width: 660px) {
+@media ($tablet) {
   .form {
     display: flex;
     flex-wrap: wrap;

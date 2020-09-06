@@ -5,7 +5,7 @@
 
 .page-title__text {
   padding: 0;
-  padding-top: 31px;
+  padding-top: 30px;
   margin: 0 auto;
   width: 168px;
   font-size: 24px;
@@ -18,7 +18,8 @@
   }
 
   &--form {
-    padding-bottom: 53px;
+    padding-bottom: 44px;
+    line-height: 32px;
     width: 228px;
   }
 }
@@ -35,9 +36,10 @@
     }
 
     &--form {
-      padding-top: 71px;
-      padding-bottom: 80px;
+      padding-top: 69px;
+      padding-bottom: 62px;
       width: 474px;
+      line-height: 66px;
     }
   }
 }
