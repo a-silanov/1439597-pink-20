@@ -1,5 +1,6 @@
 .editing {
   position: relative;
+
   background-color: $light-grey;
 
   &::after {
@@ -7,8 +8,10 @@
 
     position: absolute;
     bottom: 201px;
+
     width: 100%;
     height: 1px;
+
     background-color: $down-cancel;
   }
 }
@@ -22,9 +25,11 @@
 
 .editing__icon-wrapper {
   position: relative;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   padding: 33px 0 112px 36px;
   width: 200px;
 }
@@ -32,8 +37,10 @@
 .editing__icon {
   padding: 0;
   margin: 0;
+
   background-color: transparent;
   border: none;
+
   color: $down-link;
 
   &--active {
@@ -72,60 +79,31 @@
 }
 
 .editing__scale {
-  appearance: none;
   position: absolute;
   bottom: 73px;
   left: 20px;
+
   display: none;
-  margin: 0;
   width: 240px;
   height: 2px;
+
   background-color: $asphalt;
 
   &--active {
     display: block;
   }
-
-  &:hover {
-    outline: none;
-  }
 }
 
-.editing__scale::-webkit-slider-thumb {
-  appearance: none;
+.editing__thumb {
+  position: absolute;
+  right: 33px;
+  bottom: -6px;
+
+  padding: 0;
+  margin: 0;
   width: 14px;
   height: 14px;
-  background-color: $light-grey;
-  border: 2px solid $pink;
-  border-radius: 50%;
 
-  cursor: pointer;
-
-  &:hover,
-  &:focus {
-    background-color: $pink;
-  }
-}
-
-.editing__scale::-moz-range-thumb {
-  appearance: none;
-  width: 14px;
-  height: 14px;
-  background-color: $light-grey;
-  border: 2px solid $pink;
-  border-radius: 50%;
-  cursor: pointer;
-
-  &:hover,
-  &:focus {
-    background-color: $pink;
-  }
-}
-
-.editing__scale::-ms-thumb {
-  appearance: none;
-  width: 14px;
-  height: 14px;
   background-color: $light-grey;
   border: 2px solid $pink;
   border-radius: 50%;
@@ -142,21 +120,26 @@
 .editing__cancel {
   padding: 15px 8px 16px 8px;
   width: 280px;
+
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
+
   background-color: transparent;
   border-radius: 100px;
 }
 
 .editing__post {
   margin-bottom: 12px;
+
   color: $pink;
+
   border: 3px solid $pink;
 
   &:hover,
   &:focus {
     color: $text-head;
+
     background-color: $pink;
   }
 
@@ -167,22 +150,26 @@
 
 .editing__cancel {
   margin-bottom: 41px;
+
   color: $down-cancel;
+
   border: 3px solid $down-cancel;
 
   &:hover,
   &:focus {
     color: $down-link;
+
     border: 3px solid $down-link;
   }
 
   &:active {
     color: $down-post;
+
     background-color: $down-link;
   }
 }
 
-@media (min-width: 660px) {
+@media ($tablet) {
   .editing {
     &::after {
       height: 0;
@@ -209,12 +196,14 @@
   .editing__icon-wrapper {
     flex-wrap: wrap;
     align-content: center;
-    padding: 8px 0 38px 0;
+
+    padding: 9px 0 37px 0;
     width: 255px;
   }
 
   .editing__icon {
     padding-bottom: 73px;
+
     color: $pink;
 
     &:hover,
@@ -228,8 +217,10 @@
       position: absolute;
       top: 55px;
       left: -2px;
+
       width: 275px;
       height: 1px;
+
       background-color: $down-cancel;
     }
   }
@@ -259,6 +250,7 @@
   .editing__contrast {
     margin-top: -1px;
     margin-left: 6px;
+
     width: 16px;
     height: 16px;
 
@@ -267,23 +259,35 @@
     }
   }
 
-  .editing__contrast path {
-    fill: $pink;
-  }
-
   .editing__scale {
-    position: static;
+    position: relative;
+    bottom: 26px;
+    left: 0;
+
     display: block;
-    margin-top: -49px;
     margin-left: 7px;
     width: 202px;
 
     &--fill {
-      margin-top: -51px;
+      bottom: 27px;
     }
 
     &--contrast {
-      margin-top: -58px;
+      bottom: 30px;
+    }
+  }
+
+  .editing__thumb {
+    &--crop {
+      right: 42px;
+    }
+
+    &--fill {
+      left: 25px;
+    }
+
+    &--contrast {
+      right: 92px;
     }
   }
 
@@ -299,7 +303,7 @@
   }
 }
 
-@media (min-width: 960px) {
+@media ($desktop) {
   .editing__change {
     padding-right: 2px;
     margin-left: 70px;
@@ -308,6 +312,7 @@
   .editing__tools-wrapper {
     flex-wrap: wrap;
     flex-direction: row;
+
     width: 460px;
   }
 
@@ -323,8 +328,10 @@
 
       top: 68px;
       left: 2px;
+
       width: 410px;
       height: 1px;
+
       background-color: $down-cancel;
     }
   }
@@ -354,6 +361,7 @@
   .editing__contrast {
     margin-top: 3px;
     margin-left: 8px;
+
     width: 32px;
     height: 32px;
 
@@ -363,16 +371,31 @@
   }
 
   .editing__scale {
-    margin-top: -25px;
-    margin-left: 7px;
+    bottom: 13px;
+    left: 0;
+
     width: 288px;
 
     &--fill {
-      margin-top: -27px;
+      bottom: 14px;
     }
 
     &--contrast {
-      margin-top: -38px;
+      bottom: 19px;
+    }
+  }
+
+  .editing__thumb {
+    &--crop {
+      left: 71px;
+    }
+
+    &--fill {
+      left: 247px;
+    }
+
+    &--contrast {
+      right: 114px;
     }
   }
 

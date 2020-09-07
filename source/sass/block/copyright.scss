@@ -29,7 +29,12 @@
   }
 }
 
-@media (min-width: 960px) {
+.copyright__text:hover ~ .copyright__link,
+.copyright__text:focus ~ .copyright__link {
+  color: $asphalt;
+}
+
+@media ($desktop) {
   .copyright__text {
     font-size: 18px;
   }

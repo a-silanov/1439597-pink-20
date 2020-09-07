@@ -1,52 +1,52 @@
-.tarrif__btn--one:checked ~ .tarrif__list {
+.tarif__btn--one:checked ~ .tarif__list {
   transform: translateX(278px);
   transition: 0.5s;
 }
 
-.tarrif__btn--two:checked ~ .tarrif__list {
+.tarif__btn--two:checked ~ .tarif__list {
   transform: translateX(0);
   transition: 0.5s;
 }
 
-.tarrif__btn--three:checked ~ .tarrif__list {
+.tarif__btn--three:checked ~ .tarif__list {
   transform: translateX(-279px);
   transition: 0.5s;
 }
 
-.tarrif {
+.tarif {
   position: relative;
   background-color: $light-grey;
   z-index: 1;
 }
 
-.tarrif__wrapper {
+.tarif__wrapper {
   position: relative;
   padding: 118px 0 47px 0;
   overflow: hidden;
 }
 
-.tarrif__items {
+.tarif__items {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.tarrif__btn {
+.tarif__btn {
   display: none;
 }
 
-.tarrif__list {
+.tarif__list {
   box-sizing: border-box;
   width: 840px;
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-.tarrif__head {
+.tarif__head {
   background-color: $asphalt;
 }
 
-.tarrif__value {
+.tarif__value {
   position: relative;
 
   box-sizing: border-box;
@@ -84,13 +84,13 @@
   }
 }
 
-.tarrif__value p {
+.tarif__value p {
   margin: 2px 0 0 0;
   font-size: 24px;
   font-weight: 300;
 }
 
-.tarrif__hit {
+.tarif__hit {
   position: absolute;
   top: 0;
   left: -2px;
@@ -102,7 +102,7 @@
   background-position: center;
 }
 
-.tarrif__hit-text {
+.tarif__hit-text {
   position: absolute;
   top: 15px;
   left: 10px;
@@ -113,11 +113,11 @@
   transform: rotate(-45deg);
 }
 
-.tarrif__body {
+.tarif__body {
   background-color: $text-head;
 }
 
-.tarrif__set {
+.tarif__set {
   position: relative;
   box-sizing: border-box;
   padding: 14px 0 15px 22px;
@@ -139,7 +139,7 @@
   }
 }
 
-.tarrif__yes {
+.tarif__yes {
   position: absolute;
   top: 19px;
   right: 18px;
@@ -149,7 +149,7 @@
   background-repeat: no-repeat;
 }
 
-.tarrif__no {
+.tarif__no {
   position: absolute;
   top: 14px;
   right: 21px;
@@ -158,21 +158,21 @@
   background-position: center;
 }
 
-.tarrif__nav {
+.tarif__nav {
   margin-top: 40px;
 }
 
 @media ($tablet) {
-  .tarrif__wrapper {
+  .tarif__wrapper {
     padding: 95px 0 68px 0;
   }
 
-  .tarrif__list {
+  .tarif__list {
     width: 618px;
     transform: none;
   }
 
-  .tarrif__value {
+  .tarif__value {
     padding: 12px 7px 8px 7px;
     min-width: 0;
     font-size: 16px;
@@ -189,24 +189,24 @@
     }
   }
 
-  .tarrif__value p {
+  .tarif__value p {
     margin: -3px 0 0 0;
     font-size: 18px;
   }
 
-  .tarrif__hit {
+  .tarif__hit {
     left: 0;
     width: 61px;
     height: 61px;
     background-image: url("../img/bg-hit-tablet.svg");
   }
 
-  .tarrif__hit-text {
+  .tarif__hit-text {
     top: 8px;
     left: 7px;
   }
 
-  .tarrif__set {
+  .tarif__set {
     padding: 7px 15px 8px 15px;
     min-width: 154px;
     min-height: 45px;
@@ -229,55 +229,55 @@
     }
   }
 
-  .tarrif__yes {
+  .tarif__yes {
     top: 13px;
     right: 59px;
   }
 
-  .tarrif__no {
+  .tarif__no {
     position: absolute;
     top: 8px;
     right: 62px;
   }
 
-  .tarrif__nav {
+  .tarif__nav {
     display: none;
   }
 }
 
 @media ($desktop) {
-  .tarrif__wrapper {
+  .tarif__wrapper {
     padding: 149px 0 95px 0;
   }
 
-  .tarrif__list {
+  .tarif__list {
     width: 940px;
     transform: none;
   }
 
-  .tarrif__value {
+  .tarif__value {
     padding: 16px 7px 18px 7px;
     min-width: 0;
     font-size: 18px;
   }
 
-  .tarrif__value p {
+  .tarif__value p {
     margin: 2px 0 0 0;
     font-size: 24px;
   }
 
-  .tarrif__hit {
+  .tarif__hit {
     width: 73px;
     height: 73px;
     background-image: url("../img/bg-hit.svg");
   }
 
-  .tarrif__hit-text {
+  .tarif__hit-text {
     top: 16px;
     left: 10px;
   }
 
-  .tarrif__set {
+  .tarif__set {
     padding: 14px 0 15px 21px;
     min-width: 155px;
     min-height: 45px;
@@ -296,12 +296,12 @@
     }
   }
 
-  .tarrif__yes {
+  .tarif__yes {
     top: 22px;
     right: 100px;
   }
 
-  .tarrif__no {
+  .tarif__no {
     top: 17px;
     right: 103px;
   }
