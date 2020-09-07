@@ -1,6 +1,5 @@
 .features {
   text-align: center;
-
   background-color: $light-grey;
 }
 
@@ -19,7 +18,7 @@
 
 .features__slogan {
   display: block;
-  padding-top: 41px;
+  padding-top: 42px;
   margin: 0 auto;
   width: 204px;
 
@@ -34,7 +33,7 @@
 
 .features__list {
   padding: 0;
-  padding-top: 83px;
+  padding-top: 84px;
   padding-bottom: 318px;
   margin: 0;
 
@@ -79,22 +78,21 @@
 
   .features__slogan {
     padding-top: 49px;
+    margin-top: -10px;
     width: 587px;
-
     font-size: 40px;
     line-height: 48px;
 
     &--position {
-      padding-top: 0;
+      padding-top: 19px;
       width: 380px;
     }
   }
 
   .features__list {
-    padding-top: 88px;
-    padding-bottom: 42px;
+    padding-top: 78px;
+    padding-bottom: 40px;
     margin-left: 308px;
-
     text-align: left;
   }
 
@@ -121,14 +119,14 @@
   }
 
   .features__slogan {
-    padding-top: 67px;
+    padding-top: 75px;
     width: 733px;
 
     font-size: 50px;
     line-height: 60px;
 
     &--position {
-      padding-top: 0;
+      padding-top: 23px;
       width: 417px;
     }
   }
@@ -136,7 +134,7 @@
   .features__list {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 75px;
+    padding-top: 66px;
     padding-bottom: 42px;
     margin: 0;
     margin-left: 32px;

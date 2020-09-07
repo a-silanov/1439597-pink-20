@@ -5,6 +5,7 @@
 
 .photo__slogan {
   width: 243px;
+  padding-bottom: 30px;
 }
 
 .photo__wrapper {
@@ -18,6 +19,7 @@
 
   .photo__slogan {
     width: 438px;
+    padding-bottom: 57px;
   }
 
   .photo__wrapper {
@@ -40,12 +42,12 @@
 @media ($desktop) {
   .photo__slogan {
     width: 571px;
+    padding-bottom: 69px;
   }
 
   .photo__wrapper {
     margin-bottom: 88px;
   }
-
   .photo__list-card .photo__card {
     &:nth-child(n+4) {
       margin-top: 54px;

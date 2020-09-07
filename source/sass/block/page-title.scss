@@ -5,7 +5,7 @@
 
 .page-title__text {
   padding: 0;
-  padding-top: 31px;
+  padding-top: 30px;
   margin: 0 auto;
   width: 168px;
   font-size: 24px;
@@ -14,11 +14,13 @@
   color: white;
 
   &--photo {
-    padding-bottom: 83px;
+    padding-bottom: 76px;
+    line-height: 32px;
   }
 
   &--form {
-    padding-bottom: 53px;
+    padding-bottom: 44px;
+    line-height: 32px;
     width: 228px;
   }
 }
@@ -30,14 +32,11 @@
     line-height: 60px;
     width: 356px;
 
-    &--photo {
-      padding-bottom: 139px;
-    }
-
     &--form {
-      padding-top: 71px;
-      padding-bottom: 80px;
+      padding-top: 69px;
+      padding-bottom: 62px;
       width: 474px;
+      line-height: 66px;
     }
   }
 }
@@ -46,6 +45,12 @@
   .page-title__text {
     padding-top: 63px;
     padding-bottom: 101px;
+
+    &--photo {
+      padding-top: 61px;
+      padding-bottom: 92px;
+      line-height: 66px;
+    }
 
     &--form {
       width: 747px;
