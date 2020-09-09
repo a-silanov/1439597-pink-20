@@ -305,7 +305,6 @@
 
   .form__mail {
     background-image: url("../img/icon-mail.svg");
-    fill: $pink;
     margin-top: 0px;
   }
 
@@ -448,7 +447,7 @@
   .form__number,
   .form__mail {
     right: 1px;
-    top: 74px;
+    top: 0px;
   }
 
   .form__legend {
