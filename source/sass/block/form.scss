@@ -300,12 +300,12 @@
   .form__number {
     background-image: url("../img/icon-phone.svg");
     fill: $pink;
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   .form__mail {
     background-image: url("../img/icon-mail.svg");
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   .form__text {
@@ -447,7 +447,7 @@
   .form__number,
   .form__mail {
     right: 1px;
-    top: 0px;
+    top: 0;
   }
 
   .form__legend {
