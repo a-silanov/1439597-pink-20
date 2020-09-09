@@ -33,22 +33,23 @@
 .connections__question {
   padding-top: 42px;
   line-height: 29px;
+  margin-top: -4px;
 }
 
 .connections__list {
   padding: 0;
-  padding-top: 34px;
+  padding-top: 33px;
   margin: 0;
   list-style: none;
 }
 
 .connections__item {
   &:nth-child(1) {
-    padding-bottom: 19px;
+    padding-bottom: 21px;
   }
 
   &:nth-child(2) {
-    padding-bottom: 24px;
+    padding-bottom: 26px;
   }
 }
 
@@ -73,6 +74,10 @@
   }
 }
 
+.connections__link--wrap {
+  width: 120px;
+}
+
 @media ($tablet) {
   .connections {
     &::after {
@@ -82,18 +87,18 @@
   }
 
   .connections__question {
-    padding-top: 50px;
+    padding-top: 48px;
     margin: 0 auto;
     width: 371px;
     font-size: 40px;
-    line-height: 48px;
+    line-height: 50px;
   }
 
   .connections__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding-top: 40px;
+    padding-top: 39px;
   }
 
   .connections__item {
@@ -105,7 +110,7 @@
     }
 
     &:nth-child(2) {
-      padding-bottom: 45px;
+      padding-bottom: 43px;
     }
   }
 

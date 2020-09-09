@@ -46,14 +46,15 @@
   border: 2px solid $pink;
 }
 
-@media (min-width: 660px) {
+@media ($tablet) {
   .radio__icon {
     left: 58px;
   }
 }
 
-@media (min-width: 960px) {
+@media ($desktop) {
   .radio__icon {
     left: 74px;
+    top: -2px;
   }
 }
