@@ -23,7 +23,6 @@
   box-sizing: border-box;
 
   width: 840px;
-
   border-collapse: collapse;
   border-spacing: 0;
 }
@@ -258,6 +257,11 @@
     padding: 16px 7px 18px 7px;
     min-width: 0;
     font-size: 18px;
+
+    &:first-child {
+      border-left: none;
+      border-top: none;
+    }
   }
 
   .tarif__value p {

@@ -15,7 +15,8 @@
 
   &--photo {
     padding-bottom: 76px;
-    line-height: 32px;
+    padding-top: 27px;
+    line-height: 33px;
   }
 
   &--form {
@@ -32,6 +33,12 @@
     font-size: 50px;
     line-height: 60px;
     width: 356px;
+
+    &--photo {
+      padding-top: 67px;
+      padding-bottom: 130px;
+      line-height: 66px;
+    }
 
     &--form {
       padding-top: 75px;
