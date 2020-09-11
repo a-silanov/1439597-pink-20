@@ -134,10 +134,10 @@
   }
 
   .connections__question {
-    padding-top: 64px;
+    padding-top: 68px;
     width: 461px;
     font-size: 50px;
-    line-height: 60px;
+    line-height: 62px;
   }
 
   .connections__list {
@@ -148,6 +148,7 @@
   .connections__item {
     padding: 0;
     width: 211px;
+    margin-top: -6px;
 
     &:nth-child(1) {
       margin-right: 23px;

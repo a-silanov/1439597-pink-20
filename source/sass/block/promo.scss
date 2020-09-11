@@ -18,7 +18,7 @@
 }
 
 .promo__download {
-  margin: -7px 0 0 2px;
+  margin: -7px 0 0 -20px;
   padding: 28px 21px 30px 19px;
   width: 280px;
   text-align: center;
@@ -124,19 +124,20 @@
   }
 
   .promo__slogan {
-    padding-top: 105px;
+    padding-top: 102px;
     margin: 0;
     margin-left: 30px;
     width: 241px;
     font-size: 50px;
-    line-height: 60px;
+    line-height: 64px;
   }
 
   .promo__image {
     top: 84px;
-    right: 143px;
+    right: 25px;
     width: 634px;
     height: 645px;
+    margin-left: 20px;
   }
 
   .promo__download {
@@ -144,6 +145,7 @@
   }
 
   .promo__link {
+    margin-top: -4px;
     padding: 14px 28px 17px 29px;
     width: 237px;
     font-size: 21px;
