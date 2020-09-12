@@ -13,13 +13,18 @@
 }
 
 .promo__image {
-  padding-top: 29px;
+  padding-top: 27px;
   margin-left: -62px;
+  margin-bottom: -7px;
+}
+
+.promo__download--wrapper {
+  background-color: $asphalt;
 }
 
 .promo__download {
-  margin: -7px 0 0 -20px;
-  padding: 28px 21px 30px 19px;
+  margin: 0 auto;
+  padding: 29px 21px 30px 19px;
   width: 280px;
   text-align: center;
   background-color: $asphalt;
@@ -66,10 +71,14 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    z-index: 1;
+  }
+  .promo__download--wrapper {
+    background-color: transparent;
   }
 
   .promo__slogan {
-    padding-top: 96px;
+    padding-top: 94px;
     margin: 0;
     margin-left: 58px;
     font-size: 40px;
@@ -86,6 +95,7 @@
     margin: 0;
     width: 517px;
     height: 545px;
+    z-index: -1;
   }
 
   .promo__download {
@@ -96,9 +106,9 @@
   }
 
   .promo__link {
-    padding: 16px 38px 15px 36px;
+    padding: 18px 38px 15px 36px;
     width: 220px;
-    margin-top: 3px;
+    margin-top: -6px;
   }
 
   .promo__list {
@@ -123,18 +133,22 @@
     margin-left: 130px;
   }
 
+  .promo__download--wrapper {
+    background-color: transparent;
+  }
+
   .promo__slogan {
     padding-top: 102px;
     margin: 0;
     margin-left: 30px;
     width: 241px;
     font-size: 50px;
-    line-height: 64px;
+    line-height: 66px;
   }
 
   .promo__image {
-    top: 84px;
-    right: 25px;
+    top: 96px;
+    right: 142px;
     width: 634px;
     height: 645px;
     margin-left: 20px;
@@ -145,8 +159,8 @@
   }
 
   .promo__link {
-    margin-top: -4px;
-    padding: 14px 28px 17px 29px;
+    margin-top: -18px;
+    padding: 18px 28px 16px 29px;
     width: 237px;
     font-size: 21px;
   }
@@ -162,5 +176,6 @@
     width: 308px;
     font-size: 18px;
     line-height: 24px;
+    padding-bottom: 8px;
   }
 }

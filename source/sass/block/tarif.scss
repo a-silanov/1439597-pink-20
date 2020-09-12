@@ -52,7 +52,7 @@
     padding: 0;
     margin: 0;
     min-width: 0;
-
+    visibility: hidden;
     font-size: 0;
     line-height: 0;
 
@@ -164,7 +164,7 @@
   }
 
   .tarif__value {
-    padding: 12px 7px 8px 7px;
+    padding: 11px 7px 8px 7px;
     min-width: 0;
 
     font-size: 16px;
@@ -202,7 +202,7 @@
   }
 
   .tarif__set {
-    padding: 7px 15px 8px 15px;
+    padding: 8px 15px 8px 15px;
     min-width: 154px;
     min-height: 45px;
 
@@ -245,7 +245,7 @@
 
 @media ($desktop) {
   .tarif__wrapper {
-    padding: 149px 0 95px 0;
+    padding: 147px 0 95px 0;
   }
 
   .tarif__list {
@@ -281,7 +281,7 @@
   }
 
   .tarif__set {
-    padding: 14px 0 15px 21px;
+    padding: 14px 0 16px 21px;
     min-width: 155px;
     min-height: 45px;
     font-size: 18px;
