@@ -12,6 +12,7 @@ const webpic = require("gulp-webp");
 const renameitem = require("gulp-rename");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
+const htmlmin = require('gulp-htmlmin');
 
 
 // Styles
@@ -105,11 +106,13 @@ exports.server = server;
 
 const html = () => {
   return gulp.src("source/*.html")
-  //.pipe(htmlMinimizer({collapseWhitespace: true}))
+  .pipe(htmlmin({collapseWhitespace: true}))
   .pipe(gulp.dest("build"));
 }
 
 exports.html = html
+
+
 
 // Watcher
 //

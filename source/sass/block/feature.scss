@@ -18,7 +18,7 @@
 
 .features__slogan {
   display: block;
-  padding-top: 42px;
+  padding-top: 43px;
   margin: 0 auto;
   width: 204px;
 
@@ -27,7 +27,7 @@
   line-height: 28px;
 
   &--position {
-    padding-top: 31px;
+    padding-top: 32px;
   }
 }
 
@@ -41,13 +41,13 @@
 }
 
 .features__item {
-  margin: 0 auto;
+  margin: 1px auto;
   width: 260px;
 }
 
 .features__title {
-  padding-top: 31px;
-  padding-bottom: 12px;
+  padding-top: 29px;
+  padding-bottom: 11px;
   margin: 0;
 
   font-size: 18px;
@@ -55,6 +55,10 @@
   font-weight: 700;
 
   color: $black;
+
+  &--position {
+    padding-top: 31px;
+  }
 }
 
 .features__text {
@@ -76,21 +80,25 @@
     }
   }
 
-  .features__slogan {
-    padding-top: 49px;
+  .features {
     margin-top: -10px;
+  }
+
+  .features__slogan {
+    padding-top: 47px;
     width: 587px;
     font-size: 40px;
-    line-height: 48px;
+    line-height: 54px;
 
     &--position {
-      padding-top: 19px;
+      padding-top: 0;
+      line-height: 54px;
       width: 380px;
     }
   }
 
   .features__list {
-    padding-top: 78px;
+    padding-top: 72px;
     padding-bottom: 40px;
     margin-left: 308px;
     text-align: left;
@@ -119,14 +127,14 @@
   }
 
   .features__slogan {
-    padding-top: 75px;
+    padding-top: 64px;
     width: 733px;
 
     font-size: 50px;
-    line-height: 60px;
+    line-height: 62px;
 
     &--position {
-      padding-top: 23px;
+      padding-top: 10px;
       width: 417px;
     }
   }
@@ -134,7 +142,7 @@
   .features__list {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 66px;
+    padding-top: 64px;
     padding-bottom: 42px;
     margin: 0;
     margin-left: 32px;
@@ -201,7 +209,6 @@
 
   .features__text {
     width: 238px;
-
     font-size: 18px;
     line-height: 30px;
   }

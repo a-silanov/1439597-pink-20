@@ -13,13 +13,18 @@
 }
 
 .promo__image {
-  padding-top: 28px;
+  padding-top: 27px;
   margin-left: -62px;
+  margin-bottom: -7px;
+}
+
+.promo__download--wrapper {
+  background-color: $asphalt;
 }
 
 .promo__download {
-  margin: -7px 0 0 2px;
-  padding: 28px 21px 30px 19px;
+  margin: 0 auto;
+  padding: 29px 21px 30px 19px;
   width: 280px;
   text-align: center;
   background-color: $asphalt;
@@ -27,13 +32,13 @@
 
 .promo__link {
   display: block;
-  padding: 17px 24px 16px 27px;
+  padding: 17px 24px 15px 27px;
   width: 222px;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
   color: $text-head;
-  border: 3px solid $text-head;
+  border: 2px solid $text-head;
   border-radius: 100px;
   text-decoration: none;
 
@@ -50,7 +55,7 @@
 }
 
 .promo__list {
-  margin: 31px 0 11px 0;
+  margin: 33px 0 11px 0;
 }
 
 .promo__text {
@@ -66,10 +71,15 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    z-index: 1;
+  }
+
+  .promo__download--wrapper {
+    background-color: transparent;
   }
 
   .promo__slogan {
-    padding-top: 93px;
+    padding-top: 94px;
     margin: 0;
     margin-left: 58px;
     font-size: 40px;
@@ -80,25 +90,26 @@
   .promo__image {
     position: absolute;
     display: block;
-    top: 73px;
+    top: 74px;
     right: 7px;
     padding: 0;
     margin: 0;
     width: 517px;
     height: 545px;
+    z-index: -1;
   }
 
   .promo__download {
-    padding: 34px 20px 125px 20px;
+    padding: 35px 20px 125px 20px;
     margin-left: 0;
     background-color: transparent;
     z-index: 1;
   }
 
   .promo__link {
-    padding: 16px 38px 15px 36px;
+    padding: 18px 38px 15px 36px;
     width: 220px;
-    margin-top: 3px;
+    margin-top: -6px;
   }
 
   .promo__list {
@@ -123,20 +134,25 @@
     margin-left: 130px;
   }
 
+  .promo__download--wrapper {
+    background-color: transparent;
+  }
+
   .promo__slogan {
-    padding-top: 105px;
+    padding-top: 102px;
     margin: 0;
     margin-left: 30px;
     width: 241px;
     font-size: 50px;
-    line-height: 60px;
+    line-height: 66px;
   }
 
   .promo__image {
-    top: 99px;
-    right: 143px;
+    top: 96px;
+    right: 142px;
     width: 634px;
     height: 645px;
+    margin-left: 20px;
   }
 
   .promo__download {
@@ -144,7 +160,8 @@
   }
 
   .promo__link {
-    padding: 14px 28px 17px 29px;
+    margin-top: -18px;
+    padding: 18px 28px 16px 29px;
     width: 237px;
     font-size: 21px;
   }
@@ -160,5 +177,6 @@
     width: 308px;
     font-size: 18px;
     line-height: 24px;
+    padding-bottom: 8px;
   }
 }

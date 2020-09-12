@@ -3,12 +3,19 @@
 
   &::after {
     content: "";
+
     position: absolute;
+    bottom: -64px;
+    left: 0;
+
     width: 100%;
+    height: 97px;
+
     background-image: url("../img/bg-triangle-white.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
     z-index: 2;
   }
 }
@@ -19,21 +26,25 @@
 
 .reviews__list {
   padding-top: 42px;
-  padding-bottom: 58px;
+  padding-bottom: 15px;
+
   text-align: center;
 }
 
 .reviews__arrow {
   position: absolute;
   top: 212px;
+
   display: none;
   padding: 0;
   margin: 0;
   width: 22px;
   height: 41px;
+
+  color: $down-link;
+
   background-color: transparent;
   border: none;
-  color: $down-link;
 
   &--left {
     left: 10px;
@@ -46,6 +57,7 @@
   &:hover,
   &:focus {
     color: $slider-toggle;
+    // У SVG стоит currentColor
   }
 
   &:active {
@@ -74,29 +86,25 @@
 
 .reviews__text {
   padding: 0;
-  padding-top: 13px;
+  padding-top: 14px;
   margin: 0;
   line-height: 30px;
 }
 
-.reviews__toggles {
-  position: absolute;
-  bottom: 11px;
-  left: 129px;
-  padding: 0;
-  margin: 0;
+.reviews__nav {
+  margin-top: 33px;
 }
 
 @media ($tablet) {
   .reviews {
     &::after {
-      bottom: -78px;
-      height: 90px;
+      bottom: -72px;
+      height: 88px;
     }
   }
 
   .reviews__list {
-    padding-top: 85px;
+    padding-top: 84px;
   }
 
   .reviews__quote {
@@ -105,8 +113,8 @@
   }
 
   .reviews__author {
-    padding-top: 37px;
-    padding-bottom: 0px;
+    padding-top: 36px;
+    padding-bottom: 0;
     font-size: 20px;
     order: 1;
   }
@@ -141,7 +149,7 @@
   }
 
   .reviews__list {
-    padding-top: 235px;
+    padding-top: 170px;
     padding-bottom: 40px;
     margin: 0 auto;
     width: 688px;
@@ -171,6 +179,6 @@
 
   .reviews__arrow {
     display: block;
-    margin-top: 62px;
+    margin-top: 2px;
   }
 }

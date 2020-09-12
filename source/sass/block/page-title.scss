@@ -5,7 +5,7 @@
 
 .page-title__text {
   padding: 0;
-  padding-top: 30px;
+  padding-top: 31px;
   margin: 0 auto;
   width: 168px;
   font-size: 24px;
@@ -15,11 +15,13 @@
 
   &--photo {
     padding-bottom: 76px;
-    line-height: 32px;
+    padding-top: 27px;
+    line-height: 33px;
   }
 
   &--form {
-    padding-bottom: 44px;
+    margin-top: -4px;
+    padding-bottom: 46px;
     line-height: 32px;
     width: 228px;
   }
@@ -32,9 +34,15 @@
     line-height: 60px;
     width: 356px;
 
+    &--photo {
+      padding-top: 67px;
+      padding-bottom: 130px;
+      line-height: 66px;
+    }
+
     &--form {
-      padding-top: 69px;
-      padding-bottom: 62px;
+      padding-top: 75px;
+      padding-bottom: 63px;
       width: 474px;
       line-height: 66px;
     }
@@ -54,6 +62,7 @@
 
     &--form {
       width: 747px;
+      padding-bottom: 93px;
     }
   }
 }

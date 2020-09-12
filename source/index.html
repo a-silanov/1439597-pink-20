@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
     <title>HTML Academy: Пинк</title>
@@ -152,6 +155,16 @@
       <symbol id="arrow-right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
         <path fill="currentColor" d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
       </symbol>
+
+      <!-- Галочка в таблице -->
+      <symbol id="yes" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+        <path fill="#3dc644" d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+      </symbol>
+
+      <!-- Крестик в таблице -->
+      <symbol id="no" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+        <path fill="#f25b26" d="M15.497 13.376L26.312 2.562A1.5 1.5 0 1024.191.441L13.376 11.255 2.562.439A1.5 1.5 0 10.441 2.56l10.814 10.815L.439 24.19a1.5 1.5 0 102.122 2.121l10.815-10.814L24.19 26.312c.293.293.677.439 1.061.439s.768-.146 1.061-.439a1.5 1.5 0 000-2.121L15.497 13.376z"/>
+      </symbol>
     </svg>
 
     <header class="page-header">
@@ -208,11 +221,11 @@
             <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-hand-tablet2@2x.webp 2x, img/iphone-hand-tablet2@1x.webp 1x">
             <source type="image/webp" srcset="img/iphone-hand-mobile@2x.webp 2x, img/iphone-hand-mobile@1x.webp 1x">
 
-            <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@2x.png 2x, img/iphone-hand-desktop@1x.png 1x">
-            <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@2x.png 2x, img/iphone-hand-tablet@1x.png 1x">
+            <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop2@2x.png 2x, img/iphone-hand-desktop2@1x.png 1x">
+            <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet2@2x.png 2x, img/iphone-hand-tablet2@1x.png 1x">
             <img class="promo__image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" width="258" height="286" alt="example">
           </picture>
-
+          <div class="promo__download--wrapper">
           <div class="promo__download">
             <a class="promo__link" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
             <ul class="promo__list list-icon">
@@ -227,6 +240,7 @@
               </li>
             </ul>
             <p class="promo__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
           </div>
         </section>
       </div>
@@ -247,7 +261,7 @@
               <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы <span class="features__position">усилить эффект</span></p>
             </li>
             <li class="features__item">
-              <h3 class="features__title">Заводит новых друзей</h3>
+              <h3 class="features__title features__title--position">Заводит новых друзей</h3>
               <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
@@ -304,9 +318,6 @@
       <h2 class="visually-hidden">Варианты подписки</h2>
       <div class="tarif__wrapper">
         <div class="tarif__items slider">
-          <input class="tarif__btn tarif__btn--one slider__input slider__input--one" id="tarif-radio-1" type="radio" name="sliderBtn">
-          <input class="tarif__btn tarif__btn--two slider__input slider__input--two" id="tarif-radio-2" type="radio" name="sliderBtn" checked>
-          <input class="tarif__btn tarif__btn--three slider__input slider__input--three" id="tarif-radio-3" type="radio" name="sliderBtn">
           <table class="tarif__list">
             <tr class="tarif__head">
               <th class="tarif__value tarif__value--invisible"></th>
@@ -391,9 +402,9 @@
             </tr>
           </table>
           <div class="tarif__nav slider__wrapper">
-            <label class="slider__toggle slider__toggle--one" for="tarif-radio-1" aria-label="Посмотреть базовый тариф"></label>
-            <label class="slider__toggle slider__toggle--two" for="tarif-radio-2" aria-label="Посмотреть стандартный тариф"></label>
-            <label class="slider__toggle slider__toggle--three" for="tarif-radio-3" aria-label="Посмотреть полный тариф"></label>
+            <button class="slider__toggle" type="button" aria-label="Посмотреть первый отзыв"></button>
+            <button class="slider__toggle slider__toggle--active" type="button" aria-label="Посмотреть второй отзыв"></button>
+            <button class="slider__toggle" type="button" aria-label="Посмотреть третий отзыв"></button>
           </div>
         </div>
       </div>
@@ -413,7 +424,7 @@
           </li>
           <li class="connections__item">
             <b class="connections__text">Приезжайте в гости:</b>
-            <a class="connections__link">ул. Большая Конюшенная, 19/8</a>
+            <a class="connections__link connections__link--wrap">ул. Большая Конюшенная, 19/8</a>
           </li>
         </ul>
       </div>
@@ -431,7 +442,6 @@
       </picture>
     </div>
   </main>
-  </body>
   <footer class="page-footer page-footer--index">
     <div class="page-footer__wrapper container">
       <div class="page-footer__logo contacts">
@@ -469,4 +479,5 @@
     </div>
   </footer>
   <script src="js/script.js"></script>
+  </body>
 </html>

@@ -36,7 +36,7 @@
 
 @media ($tablet) {
   .submit {
-    margin: 67px 0 50px 0;
+    margin: 65px 0 50px 0;
     width: 296px;
   }
 }
@@ -45,5 +45,6 @@
   .submit {
     margin: 0;
     margin-top: 65px;
+    margin-left: 1px;
   }
 }
