@@ -18,7 +18,7 @@
   margin-bottom: -7px;
 }
 
-.promo__download--wrapper {
+.promo__inner {
   background-color: $asphalt;
 }
 
@@ -74,7 +74,7 @@
     z-index: 1;
   }
 
-  .promo__download--wrapper {
+  .promo__inner {
     background-color: transparent;
   }
 
@@ -134,7 +134,7 @@
     margin-left: 130px;
   }
 
-  .promo__download--wrapper {
+  .promo__inner {
     background-color: transparent;
   }
 

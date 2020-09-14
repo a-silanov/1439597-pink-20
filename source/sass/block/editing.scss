@@ -206,9 +206,12 @@
 
     color: $pink;
 
-    &:hover,
     &:focus {
-      color: $pink;
+      color: $down-link;
+    }
+
+    &:hover {
+      color: $button-hover;
     }
 
     &::after {

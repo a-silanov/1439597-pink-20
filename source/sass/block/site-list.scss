@@ -13,7 +13,6 @@
 .site-list__item {
   padding: 16px 89px 14px 87px;
   margin: 0;
-  width: 144px;
   text-align: center;
   border-bottom: 1px solid $black;
   border-top: 1px solid $nav-white;
@@ -57,13 +56,15 @@
 
   .site-list__item {
     padding: 0;
-    margin-right: 39px;
-    width: 131px;
+    margin-right: 78px;
     border: none;
 
-    &:nth-last-child(1) {
+    &:nth-child(4n) {
       margin-right: 0;
-      margin-left: 9px;
+    }
+
+    &:nth-child(n+5) {
+      margin-top: 15px;
     }
   }
 
