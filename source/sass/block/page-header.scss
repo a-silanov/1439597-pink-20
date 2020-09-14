@@ -135,6 +135,11 @@
     margin: 0 auto;
   }
 
+  .page-header__wrapper-nav {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
   @media (min-resolution: 1.5dppx) {
     .page-header {
       background-image: url("../img/bg-back-desktop@2x.jpg");

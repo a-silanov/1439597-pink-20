@@ -8,25 +8,24 @@
     content: "";
 
     position: absolute;
-    bottom: 70px;
-    left: 45vw;
-
-    display: block;
-    width: 36px;
-    height: 36px;
-
-    background-image: url("../img/icon-map-marker.svg");
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 123px;
+    background-image: url("../img/bg-triangle-white-footer.svg");
     background-repeat: no-repeat;
-    background-position: center;
-
-    z-index: -1;
+    background-position: center bottom;
+    background-size: cover;
+    z-index: 4;
   }
 }
 
 .map iframe {
+  position: relative;
   width: 100%;
   height: 100%;
-
+  z-index: 2;
   border: none;
 }
 
@@ -34,8 +33,8 @@
   position: absolute;
   left: 0;
   bottom: 0;
-
-  z-index: -2;
+  height: 100%;
+  z-index: 1;
 }
 
 .map img {
@@ -47,11 +46,6 @@
 @media ($tablet) {
   .map {
     height: 399px;
-
-    &::after {
-      bottom: 145px;
-      left: 47vw;
-    }
   }
 
   .map__image {
@@ -62,11 +56,6 @@
 @media ($desktop) {
   .map {
     height: 506px;
-
-    &::after {
-      bottom: 203px;
-      left: 49vw;
-    }
   }
 
   .map__image {

@@ -23,6 +23,7 @@
   background-image: url("../img/icon-yes.svg");
   background-repeat: no-repeat;
   background-position: center;
+  fill: $pink;
 }
 
 .checkbox__input:hover + .checkbox__icon {
